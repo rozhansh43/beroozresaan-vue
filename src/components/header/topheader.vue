@@ -1,0 +1,54 @@
+<template>
+  <div class="bg-success">
+    <b-container class="py-3">
+      <b-row>
+        <b-col cols="6" md="3" class="d-flex justify-content-start align-items-center">
+          <b-img 
+          class="mainlogo"
+          src="https://beroozresaan.com/_nuxt/img/logo-full-primary.4349d87.png" 
+          
+          :v-bind="logostyle" 
+          img-height="20">
+          </b-img>
+        </b-col>
+
+        <b-col md="5" class="d-none d-md-flex justify-content-center align-items-center">
+          <b-form-input type="text" placeholder="جستجو">
+          </b-form-input>
+        </b-col>
+
+        <b-col cols="6" md="4" class="d-flex justify-content-end align-items-center">
+          <font-awesome-icon icon="far fa-user"/>
+          <div class="d-flex text-white">
+            <div>
+              <b-img src="https://beroozresaan.com/_nuxt/img/cartt.ed617c6.svg" class="header-icon">
+              </b-img>
+            </div>
+
+            <div>
+              <a href="#" class="d-flex justify-content-center align-items-center">
+                <b-img 
+                src="https://beroozresaan.com/_nuxt/img/avatarr.48dc0bb.svg" class="header-icon">
+                </b-img>
+
+                <span class="d-none d-md-block">
+                  ورود / ثبت نام
+                </span>
+              </a>
+            </div>
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      logostyle: { height:200 }
+    }
+  }
+}
+</script>

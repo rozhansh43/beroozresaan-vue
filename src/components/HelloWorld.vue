@@ -1,15 +1,17 @@
 <template>
   <div>
-    <b-button>Button</b-button>
-    <b-button variant="danger">Button</b-button>
-    <b-button variant="success">Button</b-button>
-    <b-button variant="outline-primary">Button</b-button>
-</div>
+    <siteheader/>
+    <font-awesome-icon icon="user-secret" />
+  </div>
 </template>
 
 <script>
+import siteheader from '@/components/header/siteheader.vue'
 export default {
-  name: "HelloWorld",
+  name: "home",
+  components : {
+    siteheader
+  },
   props: {
     msg: String,
   },

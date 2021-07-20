@@ -1,0 +1,25 @@
+body {
+  direction: rtl;
+  background-color: #eff1f4;
+}
+.bg-success {
+  background-color: #99b628!important;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1375px;
+  }
+}
+.mainlogo {
+  height: 50px;
+}
+.header-icon {
+  width: 40px;
+  height: 40px;
+}
