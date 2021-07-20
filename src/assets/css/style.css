@@ -1,9 +1,42 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url(../fonts/Vazir-FD.5fa67fc.woff2);
+}
 body {
-  direction: rtl;
-  background-color: #eff1f4;
+    font-family: 'Vazir';
+    font-size: .857rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #343a40;
+    direction: rtl;
+    background-color: #eff1f4;
 }
 .bg-success {
   background-color: #99b628!important;
+}
+.bg-danger {
+  background-color: rgb(250, 60, 68)!important;
+}
+
+.bg-dark {
+  background-color: #1b222e!important;
+}
+.border-animation:after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #e98501;
+  transform: scaleX(0);
+  transition: transform .5s ease;
+}
+.nav-item a:hover {
+  color: #e98501!important;
+}
+.nav-item a {
+  font-size: .857rem;
+  font-weight: 600;
+}
+.border-animation:hover:after {
+  transform: scaleX(1);
 }
 a {
   color: black;
@@ -20,6 +53,6 @@ a:hover {
   height: 50px;
 }
 .header-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }

@@ -20,10 +20,13 @@
         <b-col cols="6" md="4" class="d-flex justify-content-end align-items-center">
           <font-awesome-icon icon="far fa-user"/>
           <div class="d-flex text-white">
-            <div>
+            <a class="position-relative">
+              <b-badge pill variant="danger" class="position-absolute">
+                0
+              </b-badge>
               <b-img src="https://beroozresaan.com/_nuxt/img/cartt.ed617c6.svg" class="header-icon">
               </b-img>
-            </div>
+            </a>
 
             <div>
               <a href="#" class="d-flex justify-content-center align-items-center">
