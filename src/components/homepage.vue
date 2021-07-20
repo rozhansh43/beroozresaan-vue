@@ -11,7 +11,7 @@
 <script>
 import siteheader from '@/components/header/siteheader.vue'
 import productSlider from '@/components/productSlider.vue'
-import suggestioncarousel from '@/components/suggestionCarousel.vue'
+import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
 
 export default {
   name: "home",

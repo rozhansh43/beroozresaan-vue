@@ -46,7 +46,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .container {
-      max-width: 1375px;
+      max-width: 1450px;
   }
 }
 .mainlogo {
@@ -55,4 +55,15 @@ a:hover {
 .header-icon {
   width: 30px;
   height: 30px;
+}
+.discount-value:after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  transform: rotate( -15deg)!important;
+  right: 0!important;
+  left: 0;
+  top: 40%;
+  background-color: rgb(250, 60, 68);
 }

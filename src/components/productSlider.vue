@@ -2,6 +2,22 @@
   <div>
     <b-container>
       <b-row>
+        <b-col md="8" class="order-md-1 d-flex d-md-block">
+          <b-carousel
+            id="carousel-no-animation"
+            no-animation
+          >
+            <b-carousel-slide
+              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/b32181d1534d40888515163d3c5653bc.jpg" fluid
+            >
+            </b-carousel-slide>
+            <b-carousel-slide
+              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/217d255ca0d14a938f5d468af2f56ea8.jpg" fluid
+            >
+            </b-carousel-slide>
+          </b-carousel>
+        </b-col>
+
         <b-col md="4">
           <div>
             <b-img
@@ -18,22 +34,6 @@
             >
             </b-img>
           </div>
-        </b-col>
-
-        <b-col md="8">
-          <b-carousel
-            id="carousel-no-animation"
-            no-animation
-          >
-            <b-carousel-slide
-              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/b32181d1534d40888515163d3c5653bc.jpg" fluid
-            >
-            </b-carousel-slide>
-            <b-carousel-slide
-              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/217d255ca0d14a938f5d468af2f56ea8.jpg" fluid
-            >
-            </b-carousel-slide>
-          </b-carousel>
         </b-col>
       </b-row>
     </b-container>
