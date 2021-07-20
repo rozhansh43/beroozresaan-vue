@@ -23,6 +23,8 @@
     </b-container>
 
     <sellingfestival/>
+
+    <category/>
   </div>
 </template>
 
@@ -31,6 +33,7 @@ import siteheader from '@/components/header/siteheader.vue'
 import productSlider from '@/components/productSlider.vue'
 import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
 import sellingfestival from '@/components/sellingFestival/sellingFestival.vue'
+import category from '@/components/category/category.vue'
 
 export default {
   name: "home",
@@ -38,7 +41,8 @@ export default {
     siteheader,
     productSlider,
     suggestioncarousel,
-    sellingfestival
+    sellingfestival,
+    category
   },
   props: {
     msg: String,
