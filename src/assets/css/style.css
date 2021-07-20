@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'Vazir';
-  src: url(../fonts/Vazir-FD.5fa67fc.woff2);
+    font-family: 'Vazir';
+    src: url(../fonts/Vazir-FD.5fa67fc.woff2);
 }
+
 body {
     font-family: 'Vazir';
     font-size: .857rem;
@@ -11,65 +12,102 @@ body {
     direction: rtl;
     background-color: #eff1f4;
 }
-.bg-success {
-  background-color: #99b628!important;
+
+.col,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-md,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9 {
+    padding-right: .5rem;
+    padding-left: .5rem;
 }
+
+.bg-success {
+    background-color: #99b628!important;
+}
+
 .bg-danger {
-  background-color: rgb(250, 60, 68)!important;
+    background-color: rgb(250, 60, 68)!important;
 }
 
 .bg-dark {
-  background-color: #1b222e!important;
+    background-color: #1b222e!important;
 }
+
 .border-animation:after {
-  display: block;
-  content: "";
-  border-bottom: 2px solid #e98501;
-  transform: scaleX(0);
-  transition: transform .5s ease;
+    display: block;
+    content: "";
+    border-bottom: 2px solid #e98501;
+    transform: scaleX(0);
+    transition: transform .5s ease;
 }
+
 .nav-item a:hover {
-  color: #e98501!important;
+    color: #e98501!important;
 }
+
 .nav-item a {
-  font-size: .857rem;
-  font-weight: 600;
+    font-size: .857rem;
+    font-weight: 600;
 }
+
 .border-animation:hover:after {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
+
 a {
-  color: black;
+    color: black;
 }
+
 a:hover {
-  color: black;
+    color: black;
 }
+
 @media (min-width: 1200px) {
-  .container {
-      max-width: 1450px;
-  }
+    .container {
+        max-width: 1450px;
+    }
 }
+
 .mainlogo {
-  height: 50px;
+    height: 50px;
 }
+
 .header-icon {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
+
 .discount-value:after {
-  content: "";
-  width: 80%;
-  height: 1px;
-  position: absolute;
-  transform: rotate( -15deg)!important;
-  right: 0!important;
-  left: 0;
-  top: 40%;
-  background-color: rgb(250, 60, 68);
+    content: "";
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    transform: rotate( -15deg)!important;
+    right: 0!important;
+    left: 0;
+    top: 40%;
+    background-color: rgb(250, 60, 68);
 }
+
 .VueCarousel {
-  direction: ltr;
+    direction: ltr;
 }
+
 .VueCarousel .card-body {
-  min-height: 162px;
+    min-height: 162px;
 }

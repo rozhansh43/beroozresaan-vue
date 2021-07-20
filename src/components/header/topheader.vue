@@ -6,7 +6,6 @@
           <b-img 
           class="mainlogo"
           src="https://beroozresaan.com/_nuxt/img/logo-full-primary.4349d87.png" 
-          
           :v-bind="logostyle" 
           img-height="20">
           </b-img>
