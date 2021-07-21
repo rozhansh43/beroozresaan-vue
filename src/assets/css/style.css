@@ -64,11 +64,6 @@ body {
     color: #e98501!important;
 }
 
-.nav-item a {
-    font-size: .857rem;
-    font-weight: 600;
-}
-
 .border-animation:hover:after {
     transform: scaleX(1);
 }
@@ -89,6 +84,10 @@ a:hover {
 
 .mainlogo {
     height: 50px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .header-icon {

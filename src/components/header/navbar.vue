@@ -5,21 +5,30 @@
         <b-col md="8">
           <b-navbar>
             <b-navbar-nav>
-              <b-nav-item href="#" class="border-animation">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+              <b-nav-item href="#" >
+                <router-link to="/productCategory" class="border-animation">
+                <i class="fa fa-bars" aria-hidden="true">
+                </i>
                 دسته بندی کالاها
+                </router-link>              
               </b-nav-item>
 
               <b-nav-item class="border-animation" href="#">
+                <router-link to="/productCategory">
                 ارگانیک و سلامت محور
+                </router-link>
               </b-nav-item>
 
-              <b-nav-item href="#" class="border-animation" >
+              <b-nav-item href="#" class="border-animation">
+                <router-link to="/productCategory">
                 درباره به روز رسان
+                </router-link>
               </b-nav-item>
 
-              <b-nav-item href="#" class="border-animation" >
+              <b-nav-item href="#" class="border-animation">
+                <router-link to="/productCategory">
                 مزایای به روز رسان
+                </router-link>
               </b-nav-item>
             </b-navbar-nav>
           </b-navbar>
