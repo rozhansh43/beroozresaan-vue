@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-3">
     <b-container>
       <b-row>
         <b-col md="8" class="order-md-1 d-flex d-md-block">
