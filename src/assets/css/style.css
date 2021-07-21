@@ -145,6 +145,10 @@ ul li {
     list-style-type: none;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
 @media (max-width: 800px) {
     .product-gallery img {
         width: 98%;

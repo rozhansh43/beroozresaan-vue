@@ -20,7 +20,7 @@
           <b-row>
             <b-col cols="6">
               <div>
-                <img src="https://img.beroozresaan.com/unsafe/190x190/filters:format(webp)/files/shop/product/326fde3bffb24c05ad32da99e4aebf92.jpg" alt="">
+                <img src="https://img.beroozresaan.com/unsafe/190x190/filters:format(webp)/files/shop/product/326fde3bffb24c05ad32da99e4aebf92.jpg" alt="image">
                 <p class="text-right">
                   jjjj
                 </p>
