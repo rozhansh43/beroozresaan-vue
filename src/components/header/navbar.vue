@@ -45,28 +45,13 @@
       </b-row>
     </b-container>
     
-    <div class="d-md-none">
+    <div class="d-md-none py-2">
       <b-container>
         <b-row>
-          <b-col cols="3" class="">
+          <b-col cols="3" class="d-flex justify-content-center align-items-center">
             <b-button v-b-toggle.sidebar-right variant="white" class="d-flex">
-              <svg 
-              aria-hidden="true" 
-              focusable="false" 
-              data-prefix="fas" 
-              data-icon="bars" 
-              role="img" 
-              xmlns="http://www.w3.org/2000/svg" 
-              viewBox="0 0 448 512" 
-              class="m-3 mx-sm-0 cursor svg-inline--fa fa-bars fa-w-14 fa-lg"
-              >
-                <path 
-                fill="currentColor" 
-                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" 
-                class=""
-                >
-                </path>
-              </svg>
+              <i class="fa fa-bars" aria-hidden="true">
+              </i>
             </b-button>
 
             <b-sidebar id="sidebar-right" class="text-right" right shadow>
@@ -74,23 +59,33 @@
                 <nav class="mb-3">
                   <b-nav vertical>
                     <b-nav-item active @click="hide">
+                      <router-link to="/productCategory">
                       خانه
+                      </router-link>
                     </b-nav-item>
 
                     <b-nav-item href="#link-1" @click="hide">
+                      <router-link to="/productCategory">
                       دسته ها
+                      </router-link>
                     </b-nav-item>
 
                     <b-nav-item href="#link-2" @click="hide">
+                      <router-link to="/productCategory">
                       ارگانیک و سلامت محور
+                      </router-link>
                     </b-nav-item>
 
                     <b-nav-item href="#link-2" @click="hide">
+                      <router-link to="/productCategory">
                       درباره به روز رسان
+                      </router-link>
                     </b-nav-item>
 
                     <b-nav-item href="#link-2" @click="hide">
+                      <router-link to="/productCategory">
                       مزایای به روز رسان
+                      </router-link>
                     </b-nav-item>
                   </b-nav>
                 </nav>
