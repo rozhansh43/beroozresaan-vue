@@ -1,5 +1,7 @@
 <template>
   <div>
+    <font-awesome-icon :icon="['fas', 'fa-bars']" />
+
     <siteheader/>
     
     <productSlider/>

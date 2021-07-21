@@ -48,6 +48,10 @@ body {
     background-color: #1b222e!important;
 }
 
+.navbar-nav {
+    padding-inline-start: 0;
+}
+
 .border-animation:after {
     display: block;
     content: "";
@@ -79,7 +83,7 @@ a:hover {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1450px;
+        max-width: 1443px;
     }
 }
 

@@ -6,6 +6,7 @@
           <b-navbar>
             <b-navbar-nav>
               <b-nav-item href="#" class="border-animation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
                 دسته بندی کالاها
               </b-nav-item>
 

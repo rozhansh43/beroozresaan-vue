@@ -4,9 +4,9 @@
       <b-row >
         <b-col cols="6" md="3" class="d-flex justify-content-start align-items-center">
           <b-img 
-          class="mainlogo"
+          class="mainlogo px-3"
           src="https://beroozresaan.com/_nuxt/img/logo-full-primary.4349d87.png" 
-          :v-bind="logostyle" 
+          :class="logostyle" 
           img-height="20">
           </b-img>
         </b-col>
@@ -29,11 +29,10 @@
 
             <div>
               <a href="#" class="d-flex justify-content-center align-items-center">
-                <b-img 
-                src="https://beroozresaan.com/_nuxt/img/avatarr.48dc0bb.svg" class="header-icon">
+                <b-img src="https://beroozresaan.com/_nuxt/img/avatarr.48dc0bb.svg" class="header-icon">
                 </b-img>
 
-                <span class="d-none d-md-block">
+                <span class="d-none d-md-block px-3">
                   ورود / ثبت نام
                 </span>
               </a>
