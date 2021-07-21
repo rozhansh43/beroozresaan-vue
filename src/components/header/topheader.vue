@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-success">
-    <b-container class="py-3">
-      <b-row>
+  <div class="bg-success py-3">
+    <b-container >
+      <b-row >
         <b-col cols="6" md="3" class="d-flex justify-content-start align-items-center">
           <b-img 
           class="mainlogo"
