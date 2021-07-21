@@ -27,6 +27,8 @@
     <sellingfestival/>
 
     <category/>
+
+    <sitefooter/>
   </div>
 </template>
 
@@ -36,6 +38,7 @@ import productSlider from '@/components/productSlider.vue'
 import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
 import sellingfestival from '@/components/sellingFestival/sellingFestival.vue'
 import category from '@/components/category/category.vue'
+import sitefooter from '@/components/footer/sitefooter.vue'
 
 export default {
   name: "home",
@@ -44,7 +47,8 @@ export default {
     productSlider,
     suggestioncarousel,
     sellingfestival,
-    category
+    category,
+    sitefooter
   },
   props: {
     msg: String,
