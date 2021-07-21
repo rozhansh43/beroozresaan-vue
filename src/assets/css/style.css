@@ -64,6 +64,28 @@ body {
     color: #e98501!important;
 }
 
+.grey-text {
+    color: #a7b2bd;
+}
+
+.grey-border {
+    border-top: 1px solid rgba(167, 165, 165, 0.1);
+}
+
+.left-grey-border {
+    border-left: 1px solid rgba(167, 165, 165, 0.1);
+}
+
+.icons .col img {
+    filter: grayscale(100%);
+}
+
+.namad .bg-white {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+}
+
 .border-animation:hover:after {
     transform: scaleX(1);
 }
@@ -113,4 +135,31 @@ a:hover {
 
 .VueCarousel .card-body {
     min-height: 162px;
+}
+
+.orange-border-top {
+    border-top: 5px solid #e98501;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+@media (max-width: 800px) {
+    .product-gallery img {
+        width: 98%;
+    }
+    .suggested-products {
+        padding: 0;
+    }
+    .namad .bg-white {
+        width: 50px;
+        height: 50px;
+    }
+    .first-gallery {
+        margin-top: 0!important;
+    }
+    .suggestions img {
+        width: 100%;
+    }
 }
