@@ -1,28 +1,28 @@
 <template>
   <b-card
-    :img-src="firstcarousel.src"
-    img-alt="firstcarousel.name"
+    :img-src="product.src"
+    img-alt="product.name"
     img-top
     tag="article"
     style="max-width: 20rem;"
   >
     <b-card-text class="text-right">
-      {{ firstcarousel.name }}
+      {{ product.name }} 
     </b-card-text>
 
     <div class="mb-2 text-left px-3">
       <div class="text-muted">
         <span class="discount-value position-relative px-2">
-          {{ firstcarousel.price }}
+          {{ product.price }}
         </span>
 
         <b-badge pill variant="danger" class="p-2">
-          {{ firstcarousel.discount }}
+          {{ product.discount }}
         </b-badge>
 
         
         <div class="font-weight-bold text-left px-3">
-          {{ firstcarousel.afterdiscount }}
+          {{ product.afterdiscount }}
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  props: ['firstcarousel']
+  props: ['product']
 }
 </script>
 
