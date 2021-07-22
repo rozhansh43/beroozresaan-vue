@@ -32,7 +32,13 @@
 
     <firstProductGallery/>
 
+    <carousel/>
+
+
     <productGallery/>
+
+    <carousel/>
+
 
     <sitefooter/>
   </div>
