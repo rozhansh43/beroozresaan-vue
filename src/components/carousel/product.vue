@@ -31,8 +31,14 @@
 
 <script>
 export default {
-  props: ['product']
-}
+  name: 'carousel',
+  props: {
+    product: {
+      type: Array,
+      default: () => []
+    }
+  }
+} 
 </script>
 
 <style>

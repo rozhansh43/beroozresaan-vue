@@ -13,6 +13,7 @@
 import product from './product.vue'
 
 export default {
+  name: 'carousel',
   components: {
     product
   },

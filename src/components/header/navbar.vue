@@ -100,5 +100,5 @@
         </b-row>
       </b-container>
   </div>
-  </div>
+</div>
 </template>
