@@ -34,7 +34,7 @@ export default {
   name: 'carousel',
   props: {
     product: {
-      type: Array,
+      type: Object,
       default: () => []
     }
   }

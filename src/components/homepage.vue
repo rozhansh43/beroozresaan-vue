@@ -26,6 +26,9 @@
 
     <category/>
 
+
+    <firstProductGallery/>
+
     <b-container>
       <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
         <slide v-for="product in firstcarousel" :key="product.id">
@@ -34,7 +37,7 @@
       </carousel>
     </b-container>
 
-    <firstProductGallery/>
+    <productGallery/>
 
     <b-container>
       <div class="d-flex justify-content-between align-items-center">
@@ -60,7 +63,8 @@
       </carousel>
     </b-container>
 
-    <productGallery/>
+    <secondProductGallery/>
+
 
     <b-container>
       <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
@@ -81,6 +85,7 @@ import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
 import category from '@/components/category/category.vue'
 import product from '@/components/carousel/product.vue'
 import firstProductGallery from '@/components/productGallery/firstProductGallery.vue'
+import secondProductGallery from '@/components/productGallery/secondProductGallery.vue'
 import productGallery from '@/components/productGallery/productGallery.vue'
 import sitefooter from '@/components/footer/sitefooter.vue'
 
@@ -90,6 +95,7 @@ export default {
     siteheader,
     productSlider,
     suggestioncarousel,
+    secondProductGallery,
     category,
     product,
     firstProductGallery,

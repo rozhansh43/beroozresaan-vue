@@ -139,8 +139,8 @@ a:hover {
     direction: ltr;
 }
 
-.VueCarousel .card-body {
-    min-height: 162px;
+.VueCarousel .card-body p{
+    min-height: 50px;
 }
 
 .orange-border-top {

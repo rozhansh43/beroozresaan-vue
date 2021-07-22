@@ -15,17 +15,16 @@
 
           <div class="mb-2 text-left px-3">
             <div class="text-muted">
-              <span class="discount-value position-relative px-2">
-                {{ suggestedProduct.price }}
-              </span>
-
               <b-badge pill variant="danger" class="p-2">
                 {{ suggestedProduct.discount }}
               </b-badge>
 
-              
-              <div class="font-weight-bold text-left px-3">
-                {{ suggestedProduct.afterdiscount }}
+              <span class="discount-value position-relative px-2">
+                {{ suggestedProduct.price }}
+              </span>
+
+              <div class="font-weight-bold text-left p-2 h6">
+                  تومان {{ suggestedProduct.afterdiscount }} 
               </div>
             </div>
           </div>
