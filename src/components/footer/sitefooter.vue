@@ -6,18 +6,22 @@
                     <h5 class="p-3">
                         راه های ارتباطی
                     </h5>
+
                     <div class="d-flex align-items-center mb-3 grey-text grey-border pt-3">
                         <span>
                               آدرس : تهران، خیابان دماوند، خیابان اتحاد، نبش بزرگراه زین
                               الدین، پلاک ۶۱
                         </span>
                     </div>
+
                     <div class="d-flex align-items-center mb-3 grey-text">
                         تلفن: ۹۶۶۴7-۰۲۱
                     </div>
+
                     <div class="d-flex align-items-center mb-3 grey-text">
                         ایمیل: info@BeroozResaan.com
                     </div>
+
                     <b-container class="icons">
                         <b-row>
                             <b-col>
@@ -28,10 +32,12 @@
                                 <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png" alt="image" >
                                 </b-img>
                             </b-col>
+
                             <b-col>
                                 <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png" alt="image" >
                                 </b-img>
                             </b-col>
+
                             <b-col>
                                 <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/5112f5f3855e424e9c2d6a188918321d.png" alt="image" >
                                 </b-img>
@@ -41,6 +47,7 @@
                                 </b-img>
 
                             </b-col>
+
                             <b-col>
                                 <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/1e8294073ccf41b29aeb57cebab60506.png" alt="image">
                                 </b-img>
@@ -50,21 +57,43 @@
                 </b-col>
 
                 <b-col md="4" class="left-grey-border px-3">
-                    <h5 class="p-3">راهنمای خرید</h5>
+                    <h5 class="p-3">
+                        راهنمای خرید
+                    </h5>
+
                     <b-row class="grey-border p-3">
                         <b-col class="grey-text">
                             <ul>
-                                <li>سوالات متداول</li>
-                                <li>روش های پرداخت</li>
-                                <li>روش های ارسال</li>
-                                <li>کوپن های تخفیف</li>
+                                <li>
+                                    سوالات متداول
+                                </li>
+
+                                <li>
+                                    روش های پرداخت
+                                </li>
+
+                                <li>
+                                    روش های ارسال
+                                </li>
+                                
+                                <li>
+                                    کوپن های تخفیف
+                                </li>
                             </ul>
                         </b-col>
                         <b-col class="grey-text">
                             <ul>
-                                <li>قوانین، مقررات و شرایط استفاده</li>
-                                <li>روش های بازگرداندن کالا</li>
-                                <li>حفاظت از حریم خصوصی کاربران</li>
+                                <li>
+                                    قوانین، مقررات و شرایط استفاده
+                                </li>
+
+                                <li>
+                                    روش های بازگرداندن کالا
+                                </li>
+
+                                <li>
+                                    حفاظت از حریم خصوصی کاربران
+                                </li>
                             </ul>
                         </b-col>
                     </b-row>
@@ -95,6 +124,7 @@
                         مارگارین، کره بادام زمینی، کره پسته، کره فندق، دوغ،دوغ گاوی، دوغ گوسفندی، دوغ ...
                     </p>
                 </b-col>
+
                 <b-col md="4">
                     <h5 class="p-3">
                         نمادها
@@ -151,11 +181,17 @@
                         ©1399- بازار آنلاین به روز رسان - کليه حقوق اين وب سايت متعلق به شرکت به روز رسان فن آور بین الملل (سهامی خاص) می‌باشد
                     </p>
                 </b-col>
+                
                 <b-col md="2" class="text-left">
-                    <p>درباره به روز رسان</p>
+                    <p>
+                        درباره به روز رسان
+                    </p>
                 </b-col>
+
                 <b-col md="2" class="text-right">
-                    <p>تماس با به روز رسان</p>
+                    <p>
+                        تماس با به روز رسان
+                    </p>
                 </b-col>
             </b-row>
         </b-container>

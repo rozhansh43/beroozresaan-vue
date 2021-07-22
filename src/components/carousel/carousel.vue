@@ -1,7 +1,23 @@
 <template>
   <b-container>
     <carousel :perPageCustom="[[0, 1], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
-      <slide v-for="product in firstcarousel" :key="product.name">
+      <slide>
+        <product :firstcarousel="firstcarousel"/>
+      </slide>
+
+      <slide>
+        <product :firstcarousel="firstcarousel"/>
+      </slide>
+
+      <slide>
+        <product :firstcarousel="firstcarousel"/>
+      </slide>
+
+      <slide>
+        <product :firstcarousel="firstcarousel"/>
+      </slide>
+      
+      <slide>
         <product :firstcarousel="firstcarousel"/>
       </slide>
     </carousel>
