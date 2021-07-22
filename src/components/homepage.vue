@@ -32,6 +32,22 @@
 
     <firstProductGallery/>
 
+  <b-container>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="#">
+        <h4 class="text-right">
+        جدیدترین جشنواره های فروش  
+        </h4>   
+      </a>
+
+      <a href="#" class="text-left">
+        <span>
+          مشاهده همه />
+        </span>  
+      </a>
+    </div>
+  </b-container>
+
     <carousel/>
 
 
