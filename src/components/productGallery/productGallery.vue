@@ -3,7 +3,7 @@
         <b-row>
             <b-col md="4" cols="6">
                 <div>
-                    <b-img class="rounded img-fluid mb-md-3 mb-1 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/012e426f9cc4473cac9b51026b4cc589.jpg" alt="image" >
+                    <b-img class="rounded img-fluid mb-3 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/012e426f9cc4473cac9b51026b4cc589.jpg" alt="image" >
                     </b-img>
                 </div>
 
@@ -15,7 +15,7 @@
 
             <b-col md="4" cols="6">
                 <div>
-                    <b-img class="rounded img-fluid mb-md-3 mb-1 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/f745c4f6a04d4c78905b03b5977b08f6.jpg" alt="image" >
+                    <b-img class="rounded img-fluid mb-3 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/f745c4f6a04d4c78905b03b5977b08f6.jpg" alt="image" >
                     </b-img>
                 </div>
 

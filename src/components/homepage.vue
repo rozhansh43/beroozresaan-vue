@@ -27,7 +27,7 @@
     <category/>
 
     <b-container>
-      <carousel :perPageCustom="[[0, 1], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
+      <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
         <slide v-for="product in firstcarousel" :key="product.id">
           <product :product="product" :name="product.name"/>
         </slide>
@@ -53,7 +53,7 @@
     </b-container>
 
     <b-container>
-      <carousel :perPageCustom="[[0, 1], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
+      <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
         <slide v-for="product in secondcarousel" :key="product.id">
           <product :product="product" :name="product.name"/>
         </slide>
@@ -63,7 +63,7 @@
     <productGallery/>
 
     <b-container>
-      <carousel :perPageCustom="[[0, 1], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
+      <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
         <slide v-for="product in thirdcarousel" :key="product.id">
           <product :product="product" :name="product.name"/>
         </slide>
@@ -95,9 +95,6 @@ export default {
     firstProductGallery,
     productGallery,
     sitefooter
-  },
-  props: {
-    msg: String,
   },
   data () {
     return {

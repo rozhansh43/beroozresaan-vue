@@ -2,8 +2,8 @@
   <div class="my-3">
     <b-container>
       <b-row>
-        <b-col md="3" class="bg-danger d-flex justify-content-center align-items-center">
-          <b-img src="https://img.beroozresaan.com/unsafe/200x200/filters:format(webp)/files/widget/promotion/dfd79b386db744159d98fcf2e7725aed.jpg">
+        <b-col md="3" cols="6" class="bg-danger d-flex justify-content-center align-items-center">
+          <b-img src="https://img.beroozresaan.com/unsafe/200x200/filters:format(webp)/files/widget/promotion/dfd79b386db744159d98fcf2e7725aed.jpg" class="suggested-img">
           </b-img>
         </b-col>
 

@@ -18,7 +18,7 @@
           </b-carousel>
         </b-col>
 
-        <b-col md="4">
+        <b-col md="4" class="d-flex d-md-block">
           <div>
             <b-img
               src="https://img.beroozresaan.com/unsafe/fit-in/1000x1000/filters:format(webp):quality(100)/files/widget/item/3c90a706a4444ca2897501baca943495.gif" class="w-100"
@@ -30,7 +30,7 @@
           <div>
             <b-img
               src="https://img.beroozresaan.com/unsafe/fit-in/1000x1000/filters:format(webp):quality(100)/files/widget/item/c1fab9ef3de942f0a1385ba2e18d560b.gif" 
-              fluid class="mt-3 w-100"
+              fluid class="mt-0 mt-md-3 w-100"
             >
             </b-img>
           </div>

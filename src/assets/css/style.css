@@ -142,6 +142,10 @@ a:hover {
     border-top: 5px solid #e98501;
 }
 
+.red-border-top {
+    border-top: 5px solid rgb(250, 60, 68);
+}
+
 .VueCarousel .card {
     border:none;
 }
@@ -155,20 +159,14 @@ ul {
 }
 
 @media (max-width: 800px) {
-    .product-gallery img {
-        width: 98%;
-    }
-    .suggested-products {
-        padding: 0;
-    }
     .namad .bg-white {
         width: 50px;
         height: 50px;
     }
-    .first-gallery {
-        margin-top: 0!important;
+    .VueCarousel .card-body {
+        min-height: 258px;
     }
-    .suggestions img {
+    .suggested-img {
         width: 100%;
     }
 }

@@ -1,6 +1,6 @@
 <template>
-  <b-col md="9">
-    <carousel :perPageCustom="[[0, 1], [768, 2], [1024,4]]" :paginationEnabled="false">
+  <b-col md="9" cols="6">
+    <carousel :perPageCustom="[[0, 1], [768, 2], [1024,4]]" :paginationEnabled="false" class="red-border-top">
       <slide v-for="suggestedProduct in suggestedProducts" :key="suggestedProduct.id">
         <b-card
           :img-src="suggestedProduct.src"
