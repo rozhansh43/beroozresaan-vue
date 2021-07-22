@@ -24,8 +24,6 @@
         </div>
     </b-container>
 
-    <sellingfestival/>
-
     <category/>
 
     <b-container>
@@ -80,7 +78,6 @@
 import siteheader from '@/components/header/siteheader.vue'
 import productSlider from '@/components/productSlider.vue'
 import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
-import sellingfestival from '@/components/sellingFestival/sellingFestival.vue'
 import category from '@/components/category/category.vue'
 import product from '@/components/carousel/product.vue'
 import firstProductGallery from '@/components/productGallery/firstProductGallery.vue'
@@ -93,7 +90,6 @@ export default {
     siteheader,
     productSlider,
     suggestioncarousel,
-    sellingfestival,
     category,
     product,
     firstProductGallery,
