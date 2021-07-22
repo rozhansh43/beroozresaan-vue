@@ -157,6 +157,7 @@ a:hover {
 
 ul li {
     list-style-type: none;
+    line-height: 3;
 }
 
 ul {
@@ -165,6 +166,17 @@ ul {
 
 .navbar {
     padding: 0.5rem 0;
+}
+
+footer {
+    font-size: 90%;
+}
+
+footer li a {
+    color:#a7b2bd;
+}
+footer li a:hover {
+    color:#e98501;
 }
 
 @media (max-width: 800px) {

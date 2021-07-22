@@ -30,6 +30,22 @@
     <firstProductGallery/>
 
     <b-container>
+      <div class="d-flex justify-content-between align-items-center pt-3">
+        <a href="#">
+          <h4 class="text-right">
+          جدیدترین ها
+          </h4>   
+        </a>
+
+        <a href="#" class="text-left">
+          <span>
+            مشاهده همه />
+          </span>  
+        </a>
+      </div>
+    </b-container>
+
+    <b-container>
       <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
         <slide v-for="product in firstcarousel" :key="product.id">
           <product :product="product" :name="product.name"/>
@@ -40,10 +56,10 @@
     <productGallery/>
 
     <b-container>
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center pt-3">
         <a href="#">
           <h4 class="text-right">
-          جدیدترین جشنواره های فروش  
+          جدیدترین ها
           </h4>   
         </a>
 
@@ -65,6 +81,21 @@
 
     <secondProductGallery/>
 
+    <b-container>
+      <div class="d-flex justify-content-between align-items-center pt-3">
+        <a href="#">
+          <h4 class="text-right">
+            کالاهای اساسی
+          </h4>   
+        </a>
+
+        <a href="#" class="text-left">
+          <span>
+            مشاهده همه />
+          </span>  
+        </a>
+      </div>
+    </b-container>
 
     <b-container>
       <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
