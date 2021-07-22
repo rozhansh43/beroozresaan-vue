@@ -130,7 +130,7 @@
                         نمادها
                     </h5>
 
-                    <b-row class="grey-border p-3 namad">
+                    <b-row class="grey-border namad w-100">
                         <b-col>
                             <div class="bg-white rounded d-flex justify-content-center">
                                 <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png" alt="image" >
@@ -153,7 +153,7 @@
                         </b-col>
                     </b-row>
 
-                    <b-row class="p-3 namad">
+                    <b-row class="namad w-100">
                         <b-col>
                             <div class="bg-white rounded d-flex justify-content-center">
                                 <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >

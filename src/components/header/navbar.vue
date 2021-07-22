@@ -48,41 +48,46 @@
     <div class="d-md-none py-2">
       <b-container>
         <b-row>
-          <b-col cols="3" class="d-flex justify-content-center align-items-center">
-            <b-button v-b-toggle.sidebar-right variant="white" class="d-flex">
+          <b-col class="d-flex justify-content-center align-items-center">
+            <b-button v-b-toggle.sidebar-backdrop variant="white" class="d-flex">
               <i class="fa fa-bars" aria-hidden="true">
               </i>
             </b-button>
 
-            <b-sidebar id="sidebar-right" class="text-right" right shadow>
-              <div class="px-3 py-2">
+            <b-sidebar  id="sidebar-backdrop"
+              :backdrop-variant="variant"
+              backdrop
+              shadow
+              right
+              >
+              <div class="px-3 py-2 text-right">
                 <nav class="mb-3">
                   <b-nav vertical>
-                    <b-nav-item active @click="hide">
+                    <b-nav-item active>
                       <router-link to="/productCategory">
                       خانه
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-1" @click="hide">
+                    <b-nav-item href="#link-1">
                       <router-link to="/productCategory">
                       دسته ها
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-2" @click="hide">
+                    <b-nav-item href="#link-2">
                       <router-link to="/productCategory">
                       ارگانیک و سلامت محور
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-2" @click="hide">
+                    <b-nav-item href="#link-2">
                       <router-link to="/productCategory">
                       درباره به روز رسان
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-2" @click="hide">
+                    <b-nav-item href="#link-2">
                       <router-link to="/productCategory">
                       مزایای به روز رسان
                       </router-link>
