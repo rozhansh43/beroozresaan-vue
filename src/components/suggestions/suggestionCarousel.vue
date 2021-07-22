@@ -3,8 +3,21 @@
     <b-container>
       <b-row>
         <b-col md="3" cols="6" class="bg-danger d-flex justify-content-center align-items-center">
-          <b-img src="https://img.beroozresaan.com/unsafe/200x200/filters:format(webp)/files/widget/promotion/dfd79b386db744159d98fcf2e7725aed.jpg" class="suggested-img">
-          </b-img>
+          <div>
+            <h3 class="text-center text-white mb-4">
+             پیشنهاد ویژه 
+            </h3>
+
+            <b-img src="https://img.beroozresaan.com/unsafe/200x200/filters:format(webp)/files/widget/promotion/dfd79b386db744159d98fcf2e7725aed.jpg" class="suggested-img">
+            </b-img>
+
+            <div class="d-flex justify-content-center align-items-center pt-5">
+              <b-button variant="outline-light">
+              مشاهده همه
+              </b-button>
+            </div>
+
+          </div>
         </b-col>
 
         <suggestionsproduct/>

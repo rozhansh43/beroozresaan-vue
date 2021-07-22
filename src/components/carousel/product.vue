@@ -16,10 +16,10 @@
           {{ product.price }}
         </span>
 
+
         <b-badge pill variant="danger" class="p-2">
           {{ product.discount }}
         </b-badge>
-
         
         <div class="font-weight-bold text-left px-3">
           {{ product.afterdiscount }}

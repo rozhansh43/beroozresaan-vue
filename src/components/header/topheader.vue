@@ -2,16 +2,16 @@
   <div class="bg-success py-3">
     <b-container >
       <b-row >
-        <b-col cols="6" md="3" class="d-flex justify-content-start align-items-center">
+        <b-col cols="6" md="2" class="d-flex justify-content-start align-items-center">
           <b-img 
-          class="mainlogo px-3"
+          class="mainlogo"
           src="https://beroozresaan.com/_nuxt/img/logo-full-primary.4349d87.png" 
           :class="logostyle" 
           img-height="20">
           </b-img>
         </b-col>
 
-        <b-col md="5" class="d-none d-md-flex justify-content-center align-items-center">
+        <b-col md="6" class="d-none d-md-flex justify-content-center align-items-center">
           <b-form-input type="text" placeholder="جستجو">
           </b-form-input>
         </b-col>

@@ -37,6 +37,11 @@ body {
     padding-left: .5rem;
 }
 
+.container, .container-fluid {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
 .bg-success {
     background-color: #99b628!important;
 }
@@ -156,6 +161,10 @@ ul li {
 
 ul {
     padding-inline-start: 0;
+}
+
+.navbar {
+    padding: 0.5rem 0;
 }
 
 @media (max-width: 800px) {
