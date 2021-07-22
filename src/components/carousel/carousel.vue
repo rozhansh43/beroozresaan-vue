@@ -53,7 +53,7 @@ export default {
           discount: '30%',
           afterdiscount: 18000,
           src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
-        },
+        }
       ]
     }
   }
