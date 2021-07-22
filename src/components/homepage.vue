@@ -28,6 +28,8 @@
 
     <category/>
 
+    <carousel/>
+
     <firstProductGallery/>
 
     <productGallery/>
@@ -42,6 +44,7 @@ import productSlider from '@/components/productSlider.vue'
 import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
 import sellingfestival from '@/components/sellingFestival/sellingFestival.vue'
 import category from '@/components/category/category.vue'
+import carousel from '@/components/carousel/carousel.vue'
 import firstProductGallery from '@/components/productGallery/firstProductGallery.vue'
 import productGallery from '@/components/productGallery/productGallery.vue'
 import sitefooter from '@/components/footer/sitefooter.vue'
@@ -54,6 +57,7 @@ export default {
     suggestioncarousel,
     sellingfestival,
     category,
+    carousel,
     firstProductGallery,
     productGallery,
     sitefooter
