@@ -53,7 +53,6 @@ import category from '@/components/category/category'
 import productCarousel from '@/components/carousel/productCarousel'
 import mainTitles from '@/components/mainTitles/mainTitles'
 import metroGallery from '@/components/productGallery/metroGallery'
-import secondProductGallery from '@/components/productGallery/secondProductGallery'
 import productGallery from '@/components/productGallery/productGallery'
 import sitefooter from '@/components/footer/sitefooter'
 import mixin from '@/mixins/mixin'
@@ -66,7 +65,6 @@ export default {
     productSlider,
     productCarousel,
     suggestioncarousel,
-    secondProductGallery,
     mainTitles,
     category,
     metroGallery,
