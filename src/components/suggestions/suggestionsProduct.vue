@@ -1,5 +1,5 @@
 <template>
-  <b-col md="9" cols="6" class="pr-0">
+  <b-col md="9" cols="6" class="p-0">
     <carousel :perPageCustom="[[0, 1], [768, 2], [1024,4]]" :paginationEnabled="false" class="red-border-top">
       <slide v-for="item in items" :key="item.index">
         <b-card
@@ -24,7 +24,13 @@
               </span>
 
               <div class="font-weight-bold text-left p-2 h6">
-                  تومان {{ item.afterdiscount }} 
+                <span>
+                  {{ item.afterdiscount }} 
+                </span>
+
+                <span class="float-left mr-2">
+                  تومان 
+                </span>
               </div>
             </div>
           </div>

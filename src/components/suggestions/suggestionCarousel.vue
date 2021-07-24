@@ -2,7 +2,7 @@
   <div class="my-3 suggested-carousel">
     <b-container>
       <b-row class="carousel">
-        <b-col md="3" cols="6" class="bg-danger d-flex justify-content-center align-items-center">
+        <b-col md="3" cols="6" class="bg-danger d-flex justify-content-center align-items-center  ">
           <div>
             <h3 class="text-center text-white mb-4">
              پیشنهاد ویژه 

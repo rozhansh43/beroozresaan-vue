@@ -1,7 +1,7 @@
 <template>
   <b-container>
         <b-row>
-            <b-col>
+            <b-col md="6" cols="12">
                 <b-img rounded class="rounded img-fluid mb-3 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/1000x1000/filters:format(webp):quality(100)/files/widget/item/fcdd15eca2f544fa98016f90b82b8bad.jpg" alt="image" >
                 </b-img>
             </b-col>
