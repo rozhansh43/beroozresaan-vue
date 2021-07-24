@@ -20,7 +20,7 @@
           </div>
         </b-col>
 
-        <suggestionsproduct :suggestedProducts="suggestedProducts"/>
+        <suggestionsproduct :items="items"/>
       </b-row>
     </b-container>
   </div>
@@ -32,7 +32,7 @@ import suggestionsproduct from '@/components/suggestions/suggestionsProduct.vue'
 export default {
   name: 'suggestionscarousel',
   props: {
-    suggestedProducts: {
+    items: {
       type: Array,
       default: () => []
     }

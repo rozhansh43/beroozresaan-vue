@@ -1,30 +1,24 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import singleproduct from "../views/singleproduct.vue"
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import homepage from '../components/homepage'
 
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: "/",
-        name: "Home",
-        component: Home,
-    },
-    {
-        path: "/about",
-        name: "About",
-        component: () => import ( /* webpackChunkName: "about" */ "../views/About.vue")
+        name: "homepage",
+        component: homepage,
     },
     {
         path: "/productCategory",
         name: "productCategory",
-        component: () => import ( /* webpackChunkName: "productCategory" */ "../views/productCategory.vue")
+        component: () => import ( /* webpackChunkName: "productCategory" */ "../components/productCategory.vue")
     },
     {
         path: "/:id",
-        name: "singleproduct",
-        component: singleproduct,
+        name: "singleProduct",
+        component: () => import ( /* webpackChunkName: "singleProduct" */ "../components/singleProduct/singleProduct"),
         props: true
     }
 ];

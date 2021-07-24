@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div id="app">
     <font-awesome-icon :icon="['fas', 'fa-bars']" />
 
     <siteheader/>
     
     <productSlider/>
 
-    <suggestioncarousel :suggestedProducts="suggestedProducts"/>
+    <suggestioncarousel :items="suggestedProducts"/>
 
     <b-container>
         <div class="d-flex justify-content-between align-items-center">
@@ -107,6 +107,7 @@
     </b-container>
 
     <sitefooter :icons="icons"/>
+
   </div>
 </template>
 

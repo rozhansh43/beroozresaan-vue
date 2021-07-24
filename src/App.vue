@@ -1,18 +1,6 @@
 <template>
-  <div id="app">
-    <homepage/>
+  <div>
     <router-view/>
   </div>
 </template>
-
-<script>
-import homepage from '@/components/homepage'
-
-export default {
-  components: {
-    homepage
-  }
-}
-</script>
-
 

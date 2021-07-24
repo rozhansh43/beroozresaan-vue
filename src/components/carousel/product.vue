@@ -1,5 +1,5 @@
 <template>
-  <b-link  :to="`product/${product.id}`">
+  <b-link  :to="`${product.id}`">
     <b-card
       :img-src="product.src"
       :img-alt="product.name"
