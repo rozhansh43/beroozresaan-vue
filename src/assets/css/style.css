@@ -37,7 +37,8 @@ body {
     padding-left: .5rem;
 }
 
-.container, .container-fluid {
+.container,
+.container-fluid {
     padding-right: .5rem;
     padding-left: .5rem;
 }
@@ -139,7 +140,12 @@ a:hover {
     direction: ltr;
 }
 
-.VueCarousel .card-body p{
+.VueCarousel article:hover {
+    background-image: linear-gradient( 180deg, transparent 70%, #e9ecef);
+    background-repeat: repeat-x;
+}
+
+.VueCarousel .card-body p {
     min-height: 50px;
 }
 
@@ -152,7 +158,7 @@ a:hover {
 }
 
 .VueCarousel .card {
-    border:none;
+    border: none;
 }
 
 ul li {
@@ -173,10 +179,11 @@ footer {
 }
 
 footer li a {
-    color:#a7b2bd;
+    color: #a7b2bd;
 }
+
 footer li a:hover {
-    color:#e98501;
+    color: #e98501;
 }
 
 @media (max-width: 800px) {

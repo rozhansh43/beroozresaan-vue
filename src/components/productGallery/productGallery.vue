@@ -35,7 +35,16 @@
 
 <script>
 export default {
-    name: 'productGallery'
+    name: 'productGallery',
+     data () {
+        return  {
+            firstgallery: {
+                topimages: '',
+                belowomages: '',
+                largerimage: ''    
+            }
+        }
+    }
 }
 </script>
 
