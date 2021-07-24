@@ -1,22 +1,22 @@
 <template>
-  <b-link  :to="`${product.id}`">
+  <b-link  :to="`${item.id}`">
     <b-card
-      :img-src="product.src"
-      :img-alt="product.name"
+      :img-src="item.src"
+      :img-alt="item.name"
       img-top
     >
       <b-card-text class="text-right">
-        {{ product.name }} 
+        {{ item.name }} 
       </b-card-text>
 
       <div class="mb-2 text-left px-3">
         <div class="text-muted">
           <span class="discount-value position-relative px-2">
-            {{ product.price }}
+            {{ item.price }}
           </span>
 
           <b-badge pill variant="danger" class="p-2">
-            {{ product.discount }}
+            {{ item.discount }}
           </b-badge>
           
           <div class="font-weight-bold text-left px-3">
@@ -25,7 +25,7 @@
             </span>
 
             <span>
-             {{ product.afterdiscount}}  
+             {{ item.afterdiscount}}  
             </span>
           </div>
         </div>
@@ -38,7 +38,7 @@
 export default {
   name: 'carousel',
   props: {
-    product: { type: Object, default: () => {} }
+    item: { type: Object, default: () => {} }
   }
 } 
 </script>
