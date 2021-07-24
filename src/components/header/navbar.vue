@@ -45,7 +45,7 @@
       </b-row>
     </b-container>
     
-    <div class="d-md-none py-2">
+    <div class="d-md-none py-2 sidebar">
       <b-container>
         <b-row>
           <b-col class="d-flex justify-content-center align-items-center">
@@ -69,25 +69,25 @@
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-1">
+                    <b-nav-item href="#">
                       <router-link to="/productCategory">
                       دسته ها
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-2">
+                    <b-nav-item href="#">
                       <router-link to="/productCategory">
                       ارگانیک و سلامت محور
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-2">
+                    <b-nav-item href="#">
                       <router-link to="/productCategory">
                       درباره به روز رسان
                       </router-link>
                     </b-nav-item>
 
-                    <b-nav-item href="#link-2">
+                    <b-nav-item href="#">
                       <router-link to="/productCategory">
                       مزایای به روز رسان
                       </router-link>
