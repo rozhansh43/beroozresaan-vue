@@ -46,6 +46,7 @@
 
 <script>
 export default {
+  name: 'topheader',
   data () {
     return {
       logostyle: { height:200 }
