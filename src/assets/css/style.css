@@ -48,8 +48,24 @@ body {
 .counter {
     top: 0;
     right: 0;
+    height: 35px;
     font-size: 20px;
     background-color: rgba(240, 255, 255, 0.2);
+}
+
+.VueCarousel-wrapper,
+.red-border-top {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.orange-border-top,
+.VueCarousel-wrapper {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .namads {
@@ -256,7 +272,12 @@ footer a:hover {
         height: 50px;
     }
     .VueCarousel .card-body {
-        min-height: 258px;
+        min-height: 150px;
+        padding: 0.5rem;
+    }
+    .suggested-carousel .VueCarousel .card-body {
+        min-height: 220px;
+        padding: 0.5rem;
     }
     .suggested-img {
         width: 100%;

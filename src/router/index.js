@@ -4,8 +4,7 @@ import homepage from '../components/homepage'
 
 Vue.use(VueRouter);
 
-const routes = [
-    {
+const routes = [{
         path: "/",
         name: "homepage",
         component: homepage,
@@ -13,12 +12,14 @@ const routes = [
     {
         path: "/productCategory",
         name: "productCategory",
-        component: () => import ( /* webpackChunkName: "productCategory" */ "../components/productCategory.vue")
+        component: () =>
+            import ( /* webpackChunkName: "productCategory" */ "../components/productCategory.vue")
     },
     {
-        path: "/:id",
+        path: "singleProduct/:id",
         name: "singleProduct",
-        component: () => import ( /* webpackChunkName: "singleProduct" */ "../components/singleProduct/singleProduct"),
+        component: () =>
+            import ( /* webpackChunkName: "singleProduct" */ "../components/singleProduct/singleProduct"),
         props: true
     }
 ];

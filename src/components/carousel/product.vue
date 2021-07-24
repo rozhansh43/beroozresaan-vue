@@ -19,7 +19,7 @@
             {{ item.discount }}
           </b-badge>
           
-          <div class="font-weight-bold text-left px-3">
+          <div class="font-weight-bold text-left px-0 px-md-3">
             <span class="float-left pr-1">
               تومان
             </span>
