@@ -114,7 +114,11 @@ a:hover {
 }
 
 .mainlogo {
-    height: 50px;
+    height: 43px;
+}
+
+.navbar {
+    height: 60px;
 }
 
 a:hover {

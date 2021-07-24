@@ -30,6 +30,12 @@
                 مزایای به روز رسان
                 </router-link>
               </b-nav-item>
+
+              <b-nav-item href="#" class="border-animation">
+                <router-link to="/productCategory">
+                  مجله بروزرسان
+                </router-link>
+              </b-nav-item>
             </b-navbar-nav>
           </b-navbar>
         </b-col>
@@ -90,6 +96,12 @@
                     <b-nav-item href="#">
                       <router-link to="/productCategory">
                       مزایای به روز رسان
+                      </router-link>
+                    </b-nav-item>
+                    
+                    <b-nav-item href="#">
+                      <router-link to="/productCategory">
+                        مجله بروزرسان
                       </router-link>
                     </b-nav-item>
                   </b-nav>
