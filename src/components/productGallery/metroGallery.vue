@@ -1,12 +1,7 @@
 <template>
   <b-container>
         <b-row>
-            <b-col
-                v-for="(item, index) in items"
-                :key="item.id"
-                :md="getCol(index)"
-                cols="12"
-            >
+            <b-col>
                 <b-img rounded class="rounded img-fluid mb-3 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/1000x1000/filters:format(webp):quality(100)/files/widget/item/fcdd15eca2f544fa98016f90b82b8bad.jpg" alt="image" >
                 </b-img>
             </b-col>
@@ -44,16 +39,7 @@
 <script>
 export default {
     name: "firstproductgallery",
-    methods: {
-        getCol (index) {
-            switch (index) {
-                case 0:
-                    return 6
-                case 1:
-                    return 2
-            }
-        }
-    }
+    
 }
 </script>
 

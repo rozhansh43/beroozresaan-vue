@@ -28,21 +28,7 @@
 
     <metro-gallery/>
 
-    <b-container>
-      <div class="d-flex justify-content-between align-items-center pt-3">
-        <a href="#">
-          <h4 class="text-right">
-          جدیدترین ها
-          </h4>   
-        </a>
-
-        <a href="#" class="text-left">
-          <span>
-            مشاهده همه />
-          </span>  
-        </a>
-      </div>
-    </b-container>
+    <mainTitles/>
 ddd
     <b-container>
       <b-row class="carousel">
@@ -123,6 +109,7 @@ import productSlider from '@/components/productSlider'
 import suggestioncarousel from '@/components/suggestions/suggestionCarousel'
 import category from '@/components/category/category'
 import product from '@/components/carousel/product'
+import mainTitles from '@/components/mainTitles/mainTitles'
 import metroGallery from '@/components/productGallery/metroGallery'
 import secondProductGallery from '@/components/productGallery/secondProductGallery'
 import productGallery from '@/components/productGallery/productGallery'
@@ -137,6 +124,7 @@ export default {
     productSlider,
     suggestioncarousel,
     secondProductGallery,
+    mainTitles,
     category,
     product,
     metroGallery,
