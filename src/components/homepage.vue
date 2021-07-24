@@ -24,7 +24,7 @@
         </div>
     </b-container>
 
-    <category/>
+    <category :categories="categories"/>
 
 
     <firstProductGallery/>
@@ -358,6 +358,14 @@ export default {
           afterdiscount: 18000,
           src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/b2bc64448d054775b6a2e2c02af57137.jpg'
         }
+      ],
+      categories: [
+        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/29d783e415f54c2cac123aed5828e57f.png',
+        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/1b97d97d73e240b282bef4bd724e9920.png',
+        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/592dafc9e45248bdaba3abff1ade2ef6.png',
+        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/907a9ed20ee94559976f8fd980f0a82b.png',
+        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/a402469d5cfd48d3908c6f49d6ec38f2.png',
+        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/1b97d97d73e240b282bef4bd724e9920.png'
       ]
     }
   }
