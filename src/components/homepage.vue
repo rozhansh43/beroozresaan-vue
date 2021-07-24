@@ -45,8 +45,10 @@
     </b-container>
 
     <b-container>
+      <products-carousel :items="firstcarousel"/>
+      <products-carousel :items="sdfsd"/>
       <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
-        <slide v-for="product in firstcarousel" :key="product.id">
+        <slide v-for="product in items" :key="product.id">
           <product :product="product" :name="product.name"/>
         </slide>
       </carousel>
