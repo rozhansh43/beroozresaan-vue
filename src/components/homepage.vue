@@ -40,7 +40,7 @@
       </b-row>
     </b-container>
 
-    <sitefooter :icons="icons"/>
+    <sitefooter :icons="icons" :namads="namads" />
 
   </div>
 </template>

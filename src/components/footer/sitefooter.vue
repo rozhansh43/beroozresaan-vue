@@ -34,7 +34,7 @@
 
                     <b-container class="icons">
                         <b-row class="justify-content-center">
-                            <b-col cols="auto" v-for="icon in icons" :key="icon" class="px-2">
+                            <b-col cols="auto" v-for="icon in icons" :key="icon.index" class="px-2">
                                 <img :src="icon" alt="image" >
                             </b-col>
                         </b-row>
@@ -161,16 +161,9 @@
                         </b-row>
 
                         <b-row class="namad w-100">
-                            <b-col cols="auto">
+                            <b-col cols="auto p-2" v-for="item in namad" :key="item.index">
                                 <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
-                                    </b-img>
-                                </div>
-                            </b-col>
-
-                            <b-col cols="auto p-1">
-                                <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image">
+                                    <b-img rounded src="" alt="image" >
                                     </b-img>
                                 </div>
                             </b-col>
@@ -207,6 +200,10 @@ export default {
     name: 'footer',
     props: {
         icons: {
+            type: Array,
+            default: () => []
+        },
+        namads: {
             type: Array,
             default: () => []
         }

@@ -87,6 +87,10 @@ body {
     filter: grayscale(100%);
 }
 
+img {
+    border-radius: 4px;
+}
+
 .icons .col-auto img:hover {
     filter: grayscale(0);
 }

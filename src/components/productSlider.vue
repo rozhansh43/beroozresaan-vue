@@ -8,11 +8,11 @@
             no-animation
           >
             <b-carousel-slide
-              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/b32181d1534d40888515163d3c5653bc.jpg" fluid class="w-100"
+              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/b32181d1534d40888515163d3c5653bc.jpg" fluid class="w-100 rounded"
             >
             </b-carousel-slide>
             <b-carousel-slide
-              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/217d255ca0d14a938f5d468af2f56ea8.jpg" fluid class="w-100"
+              img-src="https://img.beroozresaan.com/unsafe/fit-in/900x900/filters:format(webp)/files/widget/header/217d255ca0d14a938f5d468af2f56ea8.jpg" fluid class="w-100 rounded"
             >
             </b-carousel-slide>
           </b-carousel>

@@ -1,7 +1,7 @@
 <template>
   <b-col md="9" cols="6" class="pr-0">
     <carousel :perPageCustom="[[0, 1], [768, 2], [1024,4]]" :paginationEnabled="false" class="red-border-top">
-      <slide v-for="item in items" :key="item.id">
+      <slide v-for="item in items" :key="item.index">
         <b-card
           :img-src="item.src"
           img-alt="item.name"
