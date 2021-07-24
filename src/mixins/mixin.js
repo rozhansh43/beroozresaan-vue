@@ -257,11 +257,11 @@ export default {
         redMeet: 'گوشت قرمز'
       },
       namads: [
-        'https://logo.samandehi.ir/logo.aspx?id=148555&p=nbpdshwlaqgwujynujynujyn',
         'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png',
         'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png',
-        'https://logo.samandehi.ir/logo.aspx?id=148555&p=nbpdshwlaqgwujynujynujyn',
-        'https://trustseal.enamad.ir/logo.aspx?id=92070&Code=iKH50MrACTuEQc0gOcwS'
+        'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png',
+        'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png',
+        'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png',
       ]
     }
   }

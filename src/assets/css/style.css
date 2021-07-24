@@ -181,7 +181,8 @@ a:hover {
 }
 
 .carousel {
-    padding:0 0.5rem
+    padding:0 0.5rem;
+    display: block;
 }
 
 .blink {

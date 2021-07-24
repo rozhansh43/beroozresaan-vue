@@ -112,7 +112,7 @@
             </b-row>
 
             <b-row class="grey-border">
-                <b-col md="8" class="left-grey-border px-3">
+                <b-col md="9" class="left-grey-border px-3">
                     <h5 class="p-3">
                         به روز رسان
                     </h5>
@@ -131,39 +131,16 @@
                     
                 </b-col>
 
-                <b-col md="4">
+                <b-col md="3">
                     <div>
                         <h5 class="p-3">
                             نمادها
                         </h5>
 
                         <b-row class="grey-border namad w-100">
-                            <b-col cols="auto">
-                                <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png" alt="image" >
-                                    </b-img>
-                                </div>
-                            </b-col>
-
-                            <b-col cols="auto">
-                                <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
-                                    </b-img>
-                                </div>
-                            </b-col>
-                            
-                            <b-col cols="auto">
-                                <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image" >
-                                    </b-img>
-                                </div>
-                            </b-col>
-                        </b-row>
-
-                        <b-row class="namad w-100">
-                            <b-col cols="auto p-2" v-for="item in namad" :key="item.index">
-                                <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img rounded src="" alt="image" >
+                            <b-col cols="auto" v-for="namad in namads" :key="namad.index" class="p-0 d-flex justify-content-center">
+                                <div class="bg-white rounded d-flex justify-content-center p-2 m-2">
+                                    <b-img rounded :src="namad" alt="image" >
                                     </b-img>
                                 </div>
                             </b-col>
