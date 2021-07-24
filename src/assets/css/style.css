@@ -161,6 +161,19 @@ a:hover {
     border: none;
 }
 
+.blink {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 ul li {
     list-style-type: none;
     line-height: 3;

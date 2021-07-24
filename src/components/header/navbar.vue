@@ -36,7 +36,7 @@
 
         <b-col md="4" class="d-flex justify-content-end align-items-center">
           <b-button variant="light">
-            <span class="text-danger text-bold">
+            <span class="text-danger text-bold blink">
               %
             </span>
             پیشنهادها و تخفیف ها

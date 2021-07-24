@@ -8,7 +8,7 @@
              پیشنهاد ویژه 
             </h3>
 
-            <b-img src="https://img.beroozresaan.com/unsafe/200x200/filters:format(webp)/files/widget/promotion/dfd79b386db744159d98fcf2e7725aed.jpg" class="suggested-img">
+            <b-img rounded src="https://img.beroozresaan.com/unsafe/200x200/filters:format(webp)/files/widget/promotion/dfd79b386db744159d98fcf2e7725aed.jpg" class="suggested-img">
             </b-img>
 
             <div class="d-flex justify-content-center align-items-center pt-5">
@@ -20,7 +20,7 @@
           </div>
         </b-col>
 
-        <suggestionsproduct/>
+        <suggestionsproduct :suggestedProducts="suggestedProducts"/>
       </b-row>
     </b-container>
   </div>
@@ -31,6 +31,12 @@ import suggestionsproduct from '@/components/suggestions/suggestionsProduct.vue'
 
 export default {
   name: 'suggestionscarousel',
+  props: {
+    suggestedProducts: {
+      type: Array,
+      default: () => []
+    }
+  },
   components: {
     suggestionsproduct
   }

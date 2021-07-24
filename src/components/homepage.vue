@@ -6,7 +6,7 @@
     
     <productSlider/>
 
-    <suggestioncarousel/>
+    <suggestioncarousel :suggestedProducts="suggestedProducts"/>
 
     <b-container>
         <div class="d-flex justify-content-between align-items-center">
@@ -105,7 +105,7 @@
       </carousel>
     </b-container>
 
-    <sitefooter/>
+    <sitefooter :icons="icons"/>
   </div>
 </template>
 
@@ -291,6 +291,72 @@ export default {
           discount: '30%',
           afterdiscount: 18000,
           src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/f9d7da976e524c7cae05f9d573c668c2.jpg'
+        }
+      ],
+      icons: [
+        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/90169d0dc22f416fa92db07facb4b25f.png',
+        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png',
+        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png',
+        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/5112f5f3855e424e9c2d6a188918321d.png',
+        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/23907d2b53d543e5b140b1968a4448a5.png',
+        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/1e8294073ccf41b29aeb57cebab60506.png'
+      ],
+      suggestedProducts: [
+        { 
+          name: 'پنیر پیتزای پروسس دو رنگ ناژوان 1000 گرمی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/7c1059a92a234e37bf48d97004d65b9b.jpg'
+        },
+        { 
+          name: 'سبزی آش خرد شده دکتر بیژن  400 گرمی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
+        },
+        { 
+          name: 'روغن کلزا پیور 500 سی سی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/42622c9445cb4185a449fdc5f5310867.jpg'
+        },
+        { 
+          name: 'گوشت خورشتی گوساله ممتاز روناک پروتئین 800 گرمی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/b2bc64448d054775b6a2e2c02af57137.jpg'
+        },
+        { 
+          name: 'پنیر پیتزای پروسس دو رنگ ناژوان 1000 گرمی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/7c1059a92a234e37bf48d97004d65b9b.jpg'
+        },
+        { 
+          name: 'سبزی آش خرد شده دکتر بیژن  400 گرمی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
+        },
+        { 
+          name: 'روغن کلزا پیور 500 سی سی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/42622c9445cb4185a449fdc5f5310867.jpg'
+        },
+        { 
+          name: 'گوشت خورشتی گوساله ممتاز روناک پروتئین 800 گرمی',
+          price: 27000,
+          discount: '30%',
+          afterdiscount: 18000,
+          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/b2bc64448d054775b6a2e2c02af57137.jpg'
         }
       ]
     }

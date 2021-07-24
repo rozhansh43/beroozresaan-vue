@@ -23,7 +23,7 @@
           </b-badge>
           
           <div class="font-weight-bold text-left px-3">
-            {{ product.afterdiscount }}
+            {{ product.afterdiscount }} تومان
           </div>
         </div>
       </div>

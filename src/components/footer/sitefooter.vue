@@ -24,33 +24,8 @@
 
                     <b-container class="icons">
                         <b-row>
-                            <b-col>
-                                <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/90169d0dc22f416fa92db07facb4b25f.png" alt="image" >
-                                </b-img>
-                            </b-col>
-                            <b-col>
-                                <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png" alt="image" >
-                                </b-img>
-                            </b-col>
-
-                            <b-col>
-                                <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png" alt="image" >
-                                </b-img>
-                            </b-col>
-
-                            <b-col>
-                                <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/5112f5f3855e424e9c2d6a188918321d.png" alt="image" >
-                                </b-img>
-                            </b-col>
-                            <b-col>
-                                <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/23907d2b53d543e5b140b1968a4448a5.png" alt="image" >
-                                </b-img>
-
-                            </b-col>
-
-                            <b-col>
-                                <b-img src="https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/1e8294073ccf41b29aeb57cebab60506.png" alt="image">
-                                </b-img>
+                            <b-col v-for="icon in icons" :key="icon">
+                                <img :src="icon" alt="image" >
                             </b-col>
                         </b-row>
                     </b-container>
@@ -119,7 +94,7 @@
                     </h5>
 
                     <div class="text-center grey-border">
-                        <b-img class="p-3" src="https://img.beroozresaan.com/unsafe/170x220/filters:format(webp)/files/widget/text/bee8f15eac7d4817a008eaffb1301553.png" alt="image">
+                        <b-img rounded class="p-3" src="https://img.beroozresaan.com/unsafe/170x220/filters:format(webp)/files/widget/text/bee8f15eac7d4817a008eaffb1301553.png" alt="image">
                         </b-img>
                     </div>
                 </b-col>
@@ -151,21 +126,21 @@
                         <b-row class="grey-border namad w-100 p-3">
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png" alt="image" >
+                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png" alt="image" >
                                     </b-img>
                                 </div>
                             </b-col>
 
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
+                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
                                     </b-img>
                                 </div>
                             </b-col>
                             
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image" >
+                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image" >
                                     </b-img>
                                 </div>
                             </b-col>
@@ -174,14 +149,14 @@
                         <b-row class="namad w-100 p-3">
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
+                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
                                     </b-img>
                                 </div>
                             </b-col>
 
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
-                                    <b-img src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image">
+                                    <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image">
                                     </b-img>
                                 </div>
                             </b-col>
@@ -215,7 +190,13 @@
 
 <script>
 export default {
-    name: 'footer'
+    name: 'footer',
+    props: ['icons'],
+    data () {
+        return {
+            
+        }
+    }
 }
 </script>
 
