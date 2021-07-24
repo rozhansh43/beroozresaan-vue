@@ -1,5 +1,5 @@
 <template>
-  <div class="my-3">
+  <div class="my-3 suggested-carousel">
     <b-container>
       <b-row>
         <b-col md="3" cols="6" class="bg-danger d-flex justify-content-center align-items-center">
