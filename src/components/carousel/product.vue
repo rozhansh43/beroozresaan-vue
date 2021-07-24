@@ -32,7 +32,11 @@
 export default {
   name: 'carousel',
   props: {
-    product: { type: Object, required }
+    product: { type: Object, default: () => {} }
   }
 } 
 </script>
+
+<style>
+
+</style>

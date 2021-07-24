@@ -111,18 +111,18 @@
 </template>
 
 <script>
-import siteheader from '@/components/header/siteheader.vue'
-import productSlider from '@/components/productSlider.vue'
-import suggestioncarousel from '@/components/suggestions/suggestionCarousel.vue'
-import category from '@/components/category/category.vue'
-import product from '@/components/carousel/product.vue'
-import firstProductGallery from '@/components/productGallery/firstProductGallery.vue'
-import secondProductGallery from '@/components/productGallery/secondProductGallery.vue'
-import productGallery from '@/components/productGallery/productGallery.vue'
-import sitefooter from '@/components/footer/sitefooter.vue'
+import siteheader from '@/components/header/siteheader'
+import productSlider from '@/components/productSlider'
+import suggestioncarousel from '@/components/suggestions/suggestionCarousel'
+import category from '@/components/category/category'
+import product from '@/components/carousel/product'
+import firstProductGallery from '@/components/productGallery/firstProductGallery'
+import secondProductGallery from '@/components/productGallery/secondProductGallery'
+import productGallery from '@/components/productGallery/productGallery'
+import sitefooter from '@/components/footer/sitefooter'
 
 export default {
-  name: "home",
+  name: "Homepage",
   components : {
     siteheader,
     productSlider,
