@@ -137,7 +137,7 @@
                             نمادها
                         </h5>
 
-                        <b-row class="grey-border namad w-100">
+                        <b-row class="grey-border namad w-100 justify-content-center">
                             <b-col cols="auto" v-for="namad in namads" :key="namad.index" class="p-0 d-flex justify-content-center">
                                 <div class="bg-white rounded d-flex justify-content-center p-2 m-2">
                                     <b-img rounded :src="namad" alt="image" >
