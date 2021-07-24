@@ -9,22 +9,32 @@
 
                     <div class="d-flex align-items-center mb-3 grey-text grey-border pt-3">
                         <span>
+                            <i class="fas fa-map-marker-alt bg-white rounded p-1 text-dark ml-2">
+                            </i>
                               آدرس : تهران، خیابان دماوند، خیابان اتحاد، نبش بزرگراه زین
                               الدین، پلاک ۶۱
                         </span>
                     </div>
 
                     <div class="d-flex align-items-center mb-3 grey-text">
+                        <span>
+                        <i class="fas fa-phone bg-white rounded p-1 text-dark ml-2">
+                        </i>
                         تلفن: ۹۶۶۴7-۰۲۱
+                        </span>
                     </div>
 
                     <div class="d-flex align-items-center mb-3 grey-text">
+                        <span>
+                            <i class="fas fa-envelope bg-white rounded p-1 text-dark ml-2">
+                            </i>
                         ایمیل: info@BeroozResaan.com
+                        </span>
                     </div>
 
                     <b-container class="icons">
-                        <b-row>
-                            <b-col v-for="icon in icons" :key="icon">
+                        <b-row class="justify-content-center">
+                            <b-col cols="auto" v-for="icon in icons" :key="icon" class="px-2">
                                 <img :src="icon" alt="image" >
                             </b-col>
                         </b-row>
@@ -127,7 +137,7 @@
                             نمادها
                         </h5>
 
-                        <b-row class="grey-border namad w-100 p-3">
+                        <b-row class="grey-border namad w-100">
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
                                     <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png" alt="image" >
@@ -150,7 +160,7 @@
                             </b-col>
                         </b-row>
 
-                        <b-row class="namad w-100 p-3">
+                        <b-row class="namad w-100">
                             <b-col cols="auto">
                                 <div class="bg-white rounded d-flex justify-content-center">
                                     <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png" alt="image" >
@@ -158,7 +168,7 @@
                                 </div>
                             </b-col>
 
-                            <b-col cols="auto">
+                            <b-col cols="auto p-1">
                                 <div class="bg-white rounded d-flex justify-content-center">
                                     <b-img rounded src="https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/460538fe88b94fb68997aaddf5811555.png" alt="image">
                                     </b-img>

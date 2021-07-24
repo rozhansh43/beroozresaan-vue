@@ -83,8 +83,12 @@ body {
     border-left: 1px solid rgba(167, 165, 165, 0.1);
 }
 
-.icons .col img {
+.icons .col-auto img {
     filter: grayscale(100%);
+}
+
+.icons .col-auto img:hover {
+    filter: grayscale(0);
 }
 
 .namad .bg-white {
