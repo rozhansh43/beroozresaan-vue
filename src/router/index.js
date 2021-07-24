@@ -1,7 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import productCategory from "../views/productCategory.vue";
+import productCategory from "../views/productCategory.vue"
+import singleproduct from "../views/singleproduct.vue"
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,12 @@ const routes = [{
         name: "productCategory",
         component: () =>
             import ( /* webpackChunkName: "about" */ "../views/productCategory.vue"),
+    },
+    {
+        path: "/:id",
+        name: "singleproduct",
+        component: singleproduct,
+        props: true
     },
 ];
 
