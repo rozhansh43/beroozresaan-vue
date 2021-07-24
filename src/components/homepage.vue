@@ -4,7 +4,7 @@
 
     <siteheader/>
     
-    <productSlider/>
+    <product-slider/>
 
     <suggestioncarousel :items="suggestedProducts"/>
 
@@ -26,7 +26,37 @@
 
     <category :categories="categories"/>
 
-    <firstProductGallery/>
+    <metro-gallery/>
+
+    <b-container>
+      <div class="d-flex justify-content-between align-items-center pt-3">
+        <a href="#">
+          <h4 class="text-right">
+          جدیدترین ها
+          </h4>   
+        </a>
+
+        <a href="#" class="text-left">
+          <span>
+            مشاهده همه />
+          </span>  
+        </a>
+      </div>
+    </b-container>
+ddd
+    <b-container>
+      <b-row class="carousel">
+        <products-carousel :items="firstcarousel"/>
+        <products-carousel :items="sdfsd"/>
+        <carousel :perPageCustom="[[0, 2], [768, 2], [1024,6]]" :paginationEnabled="false" class="my-3 orange-border-top">
+          <slide v-for="product in items" :key="product.id">
+            <product :product="product" :name="product.name"/>
+          </slide>
+        </carousel>
+      </b-row>
+    </b-container>
+ffff
+    <product-gallery/>
 
     <b-container>
       <div class="d-flex justify-content-between align-items-center pt-3">
@@ -45,42 +75,16 @@
     </b-container>
 
     <b-container>
-      <products-carousel :items="firstcarousel"/>
-      <products-carousel :items="sdfsd"/>
-      <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
-        <slide v-for="product in items" :key="product.id">
-          <product :product="product" :name="product.name"/>
-        </slide>
-      </carousel>
+      <b-row class="carousel">
+        <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
+          <slide v-for="product in secondcarousel" :key="product.id">
+            <product :product="product" :name="product.name"/>
+          </slide>
+        </carousel>
+      </b-row>
     </b-container>
 
-    <productGallery/>
-
-    <b-container>
-      <div class="d-flex justify-content-between align-items-center pt-3">
-        <a href="#">
-          <h4 class="text-right">
-          جدیدترین ها
-          </h4>   
-        </a>
-
-        <a href="#" class="text-left">
-          <span>
-            مشاهده همه />
-          </span>  
-        </a>
-      </div>
-    </b-container>
-
-    <b-container>
-      <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
-        <slide v-for="product in secondcarousel" :key="product.id">
-          <product :product="product" :name="product.name"/>
-        </slide>
-      </carousel>
-    </b-container>
-
-    <secondProductGallery/>
+    <second-product-gallery/>
 
     <b-container>
       <div class="d-flex justify-content-between align-items-center pt-3">
@@ -99,11 +103,13 @@
     </b-container>
 
     <b-container>
-      <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
-        <slide v-for="product in thirdcarousel" :key="product.id">
-          <product :product="product" :name="product.name"/>
-        </slide>
-      </carousel>
+      <b-row class="carousel">
+        <carousel :perPageCustom="[[0, 2], [768, 2], [1024,5]]" :paginationEnabled="false" class="my-3 orange-border-top">
+          <slide v-for="product in thirdcarousel" :key="product.id">
+            <product :product="product" :name="product.name"/>
+          </slide>
+        </carousel>
+      </b-row>
     </b-container>
 
     <sitefooter :icons="icons"/>
@@ -117,12 +123,14 @@ import productSlider from '@/components/productSlider'
 import suggestioncarousel from '@/components/suggestions/suggestionCarousel'
 import category from '@/components/category/category'
 import product from '@/components/carousel/product'
-import firstProductGallery from '@/components/productGallery/firstProductGallery'
+import metroGallery from '@/components/productGallery/metroGallery'
 import secondProductGallery from '@/components/productGallery/secondProductGallery'
 import productGallery from '@/components/productGallery/productGallery'
 import sitefooter from '@/components/footer/sitefooter'
+import mixin from '@/mixins/mixin'
 
 export default {
+  mixins: [mixin],
   name: "Homepage",
   components : {
     siteheader,
@@ -131,245 +139,9 @@ export default {
     secondProductGallery,
     category,
     product,
-    firstProductGallery,
+    metroGallery,
     productGallery,
     sitefooter
-  },
-  data () {
-    return {
-      firstcarousel: [
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'سبزی آش خرد شده دکتر بیژن  400 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'روغن کلزا پیور 500 سی سی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/42622c9445cb4185a449fdc5f5310867.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'گوشت خورشتی گوساله ممتاز روناک پروتئین 800 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/b2bc64448d054775b6a2e2c02af57137.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'پنیر پیتزای پروسس دو رنگ ناژوان 1000 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/7c1059a92a234e37bf48d97004d65b9b.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'سبزی آش خرد شده دکتر بیژن  400 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
-        }
-      ],
-      secondcarousel: [
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'دستمال جذب روغن غذا برند کاتوس',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/bc68a45a851f4ce292cbf4fda9672cc0.jpg'
-        },
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'لیف حمام ابریشمی بلند برند کاتوس',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/7eb3e61e9f9647ecab706b52363b3a66.jpg'
-        },
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'لیف حمام کلاسیک برند کاتوس',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/57cd68c117ee4f51a6c9c5f9ea67feed.jpg'
-        },
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'روکش بهداشتی توالت فرنگی رد شونده برند کاتوس',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/08403593a01a4891ae55fc8d66a0ca82.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'دستمال پاورکلین برند کاتوس 4 عددی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/5f36d80d29154fdb8b4eac18e2c43d40.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'دستمال پاورکلین برند کاتوس 4 عددی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/5f36d80d29154fdb8b4eac18e2c43d40.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'دستمال پاورکلین برند کاتوس 4 عددی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/5f36d80d29154fdb8b4eac18e2c43d40.jpg'
-        }
-      ],
-      thirdcarousel: [
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'ران گوسفند کشتار داخلی مهیا پروتئین 2 کیلوگرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/f9d7da976e524c7cae05f9d573c668c2.jpg'
-        },
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'ران گوسفندی وارداتی رزا 2 کیلوگرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/013f1e29ad0f48a38480416e17d66d86.jpg'
-        },
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'راسته گوسفند بی استخوان کشتار داخلی مهیا پروتئین 1 کیلوگرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/82e36a214ed84cb6a01c563a2f7b7fad.jpg'
-        },
-       { 
-         id: String(Math.floor(Math.random() * 999999999)),
-          name: 'ماهیچه گوسفندی آریا بهار پروتئین 1 کیلوگرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/958bae714d454772adf48e9f153fcdf3.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'گوشت ران گوسفند آریا بهار پروتئین 1 کیلوگرمی ',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/f9d7da976e524c7cae05f9d573c668c2.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'ماهیچه گوسفندی آریا بهار پروتئین 1 کیلوگرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/958bae714d454772adf48e9f153fcdf3.jpg'
-        },
-        { 
-          id: String(Math.floor(Math.random() * 999999999)),
-          name: 'گوشت ران گوسفند آریا بهار پروتئین 1 کیلوگرمی ',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/shop/product/f9d7da976e524c7cae05f9d573c668c2.jpg'
-        }
-      ],
-      icons: [
-        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/90169d0dc22f416fa92db07facb4b25f.png',
-        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png',
-        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/dc0d7c33cd1b49aa99264bb2dc77d21b.png',
-        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/5112f5f3855e424e9c2d6a188918321d.png',
-        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/23907d2b53d543e5b140b1968a4448a5.png',
-        'https://img.beroozresaan.com/unsafe/44x44/filters:format(webp)/files/widget/item/1e8294073ccf41b29aeb57cebab60506.png'
-      ],
-      suggestedProducts: [
-        { 
-          name: 'پنیر پیتزای پروسس دو رنگ ناژوان 1000 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/7c1059a92a234e37bf48d97004d65b9b.jpg'
-        },
-        { 
-          name: 'سبزی آش خرد شده دکتر بیژن  400 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
-        },
-        { 
-          name: 'روغن کلزا پیور 500 سی سی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/42622c9445cb4185a449fdc5f5310867.jpg'
-        },
-        { 
-          name: 'گوشت خورشتی گوساله ممتاز روناک پروتئین 800 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/b2bc64448d054775b6a2e2c02af57137.jpg'
-        },
-        { 
-          name: 'پنیر پیتزای پروسس دو رنگ ناژوان 1000 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/7c1059a92a234e37bf48d97004d65b9b.jpg'
-        },
-        { 
-          name: 'سبزی آش خرد شده دکتر بیژن  400 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/9589d96bf1be42db9121ae288cdcd372.jpg'
-        },
-        { 
-          name: 'روغن کلزا پیور 500 سی سی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/42622c9445cb4185a449fdc5f5310867.jpg'
-        },
-        { 
-          name: 'گوشت خورشتی گوساله ممتاز روناک پروتئین 800 گرمی',
-          price: 27000,
-          discount: '30%',
-          afterdiscount: 18000,
-          src: 'https://img.beroozresaan.com/unsafe/315x315/filters:format(webp)/files/shop/product/b2bc64448d054775b6a2e2c02af57137.jpg'
-        }
-      ],
-      categories: [
-        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/29d783e415f54c2cac123aed5828e57f.png',
-        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/1b97d97d73e240b282bef4bd724e9920.png',
-        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/592dafc9e45248bdaba3abff1ade2ef6.png',
-        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/907a9ed20ee94559976f8fd980f0a82b.png',
-        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/a402469d5cfd48d3908c6f49d6ec38f2.png',
-        'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/1b97d97d73e240b282bef4bd724e9920.png'
-      ]
-    }
   }
 };
 </script>

@@ -167,6 +167,14 @@ a:hover {
 .VueCarousel .card {
     border: none;
 }
+.category img{
+    width: 191.167px; 
+    margin-left: 55px
+}
+
+.carousel {
+    padding:0 0.5rem
+}
 
 .blink {
     animation: blink 2s infinite;
@@ -198,11 +206,14 @@ footer {
     font-size: 90%;
 }
 
-footer li a {
+footer  a {
     color: #a7b2bd;
 }
+p {
+text-align: justify;
+}
 
-footer li a:hover {
+footer a:hover {
     color: #e98501;
 }
 

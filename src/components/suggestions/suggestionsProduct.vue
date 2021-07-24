@@ -13,7 +13,7 @@
             {{ item.name }}
           </b-card-text>
 
-          <div class="mb-2 text-left px-3">
+          <div class="mb-2 text-left">
             <div class="text-muted">
               <b-badge pill variant="danger" class="p-2">
                 {{ item.discount }}

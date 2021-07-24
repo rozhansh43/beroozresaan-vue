@@ -20,7 +20,13 @@
           </b-badge>
           
           <div class="font-weight-bold text-left px-3">
-            {{ product.afterdiscount }} تومان
+            <span class="float-left pr-1">
+              تومان
+            </span>
+
+            <span>
+             {{ product.afterdiscount}}  
+            </span>
           </div>
         </div>
       </div>
@@ -36,7 +42,3 @@ export default {
   }
 } 
 </script>
-
-<style>
-
-</style>
