@@ -6,8 +6,6 @@
           :img-src="item.src"
           img-alt="item.name"
           img-top
-          tag="article"
-          style="max-width: 20rem;"
         >
           <b-card-text class="text-right">
             {{ item.name }}

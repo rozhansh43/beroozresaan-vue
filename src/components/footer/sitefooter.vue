@@ -34,7 +34,7 @@
 
                     <b-container class="icons">
                         <b-row class="justify-content-center">
-                            <b-col cols="auto" v-for="icon in icons" :key="icon.index" class="px-2">
+                            <b-col cols="auto" v-for="icon in icons" :key="icon.index" class="px-2 py-2">
                                 <img :src="icon" alt="image" >
                             </b-col>
                         </b-row>
@@ -112,7 +112,7 @@
             </b-row>
 
             <b-row class="grey-border">
-                <b-col md="9" class="left-grey-border px-3">
+                <b-col md="8" class="left-grey-border px-3">
                     <h5 class="p-3">
                         به روز رسان
                     </h5>
@@ -131,13 +131,13 @@
                     
                 </b-col>
 
-                <b-col md="3">
-                    <div>
-                        <h5 class="p-3">
+                <b-col md="4">
+                    <div class="namads">
+                        <h5 class="p-3 bottom-grey-border">
                             نمادها
                         </h5>
 
-                        <b-row class="grey-border namad w-100 justify-content-center">
+                        <b-row class="namad w-100 justify-content-center mx-0">
                             <b-col cols="auto" v-for="namad in namads" :key="namad.index" class="p-0 d-flex justify-content-center">
                                 <div class="bg-white rounded d-flex justify-content-center p-2 m-2">
                                     <b-img rounded :src="namad" alt="image" >
