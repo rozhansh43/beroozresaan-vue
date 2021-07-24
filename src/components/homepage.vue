@@ -20,7 +20,7 @@
       </b-row>
     </b-container>
 
-    <product-gallery/>
+    <product-gallery :items="firstGallery"/>
 
     <mainTitles :title="titles.mainProducts"/>
 
@@ -30,7 +30,7 @@
       </b-row>
     </b-container>
 
-    <second-product-gallery/>
+    <product-gallery :items="secondGallery"/>
 
     <mainTitles :title="titles.redMeet"/>
 

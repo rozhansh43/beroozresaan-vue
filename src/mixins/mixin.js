@@ -257,7 +257,21 @@ export default {
                 'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png',
                 'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/f5391f80341643478553970b783da605.png',
                 'https://img.beroozresaan.com/unsafe/fit-in/120x120/filters:format(webp)/files/widget/item/0c60c7b8df934a049c70bf17cbc82f00.png',
-            ]
+            ],
+            firstGallery: {
+                first: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/012e426f9cc4473cac9b51026b4cc589.jpg',
+                second: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/ba36b7bf04ec484381546b02bf0fb307.jpg',
+                third: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/f745c4f6a04d4c78905b03b5977b08f6.jpg',
+                forth: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/6b8f4f804c3e4502a9c0a2594a3d1cd0.jpg',
+                fifth: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/e8cb41f91df643b6bb8be3053bf9df6f.jpg'
+            },
+            secondGallery: {
+                first: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/7d08b5c1c5254cd0a6276e7b23e1284a.jpg',
+                second: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/20e750df91f54e218ee7a830ee6e3ff4.jpg',
+                third: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/f51a49e481e44d62af4a708bd8edfca1.jpg',
+                forth: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/381067047fc741ceadca8521a6dfad56.jpg',
+                fifth: 'https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/3b1d8522b8434e5da2e16bee9b1abe63.jpg'
+            }
         }
     }
 }

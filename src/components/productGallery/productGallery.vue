@@ -3,30 +3,30 @@
         <b-row>
             <b-col md="4" cols="6">
                 <div>
-                    <b-img rounded class="rounded img-fluid mb-3 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/012e426f9cc4473cac9b51026b4cc589.jpg" alt="image" >
+                    <b-img rounded class="rounded img-fluid mb-3 w-100" :src="items.first" alt="image" >
                     </b-img>
                 </div>
 
                 <div>
-                    <b-img rounded class="rounded w-100 img-fluid w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/ba36b7bf04ec484381546b02bf0fb307.jpg" alt="image" >
+                    <b-img rounded class="rounded w-100 img-fluid w-100" :src="items.second" alt="image" >
                     </b-img>
                 </div>
             </b-col>
 
             <b-col md="4" cols="6">
                 <div>
-                    <b-img rounded class="rounded img-fluid mb-3 w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/f745c4f6a04d4c78905b03b5977b08f6.jpg" alt="image" >
+                    <b-img rounded class="rounded img-fluid mb-3 w-100" :src="items.third" alt="image" >
                     </b-img>
                 </div>
 
                 <div>
-                    <b-img rounded class="rounded img-fluid w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/6b8f4f804c3e4502a9c0a2594a3d1cd0.jpg" alt="image" >
+                    <b-img rounded class="rounded img-fluid w-100" :src="items.forth" alt="image" >
                     </b-img>
                 </div>
             </b-col>
 
             <b-col md="4" class="d-none d-md-block">
-                <b-img rounded class="rounded img-fluid w-100" src="https://img.beroozresaan.com/unsafe/fit-in/720x720/filters:format(webp):quality(100)/files/widget/item/e8cb41f91df643b6bb8be3053bf9df6f.jpg" alt="image" >
+                <b-img rounded class="rounded img-fluid w-100" :src="items.fifth" alt="image" >
                 </b-img>
             </b-col>
        </b-row>
@@ -36,6 +36,9 @@
 <script>
 export default {
     name: 'productGallery',
+    props: {
+        items: { type: Object, default: () => {}}
+    }, 
      data () {
         return  {
             firstgallery: {
