@@ -1,11 +1,9 @@
 <template>
-  <router-link  :to="{ name: 'singleproduct', params: { id: product.id } }">
+  <b-link  :to="`product/${product.id}`">
     <b-card
       :img-src="product.src"
-      img-alt="product.name"
+      :img-alt="product.name"
       img-top
-      tag="article"
-      style="max-width: 20rem;"
     >
       <b-card-text class="text-right">
         {{ product.name }} 
@@ -17,7 +15,6 @@
             {{ product.price }}
           </span>
 
-
           <b-badge pill variant="danger" class="p-2">
             {{ product.discount }}
           </b-badge>
@@ -28,21 +25,14 @@
         </div>
       </div>
     </b-card>
-  </router-link>
+  </b-link>
 </template>
 
 <script>
 export default {
   name: 'carousel',
   props: {
-    product: {
-      type: Object,
-      default: () => []
-    }
+    product: { type: Object, required }
   }
 } 
 </script>
-
-<style>
-
-</style>

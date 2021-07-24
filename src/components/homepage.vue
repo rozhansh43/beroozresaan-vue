@@ -26,7 +26,6 @@
 
     <category :categories="categories"/>
 
-
     <firstProductGallery/>
 
     <b-container>
