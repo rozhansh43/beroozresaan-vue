@@ -8,27 +8,11 @@
 
     <suggestioncarousel :items="suggestedProducts"/>
 
-    <b-container>
-        <div class="d-flex justify-content-between align-items-center">
-          <a href="#">
-            <h4 class="text-right">
-            جدیدترین جشنواره های فروش  
-            </h4>   
-          </a>
-
-          <a href="#" class="text-left">
-            <span>
-              مشاهده همه />
-            </span>  
-          </a>
-        </div>
-    </b-container>
-
     <category :categories="categories"/>
 
     <metro-gallery/>
 
-    <mainTitles/>
+    <mainTitles :title="titles.latest"/>
 
     <b-container>
       <b-row class="carousel">
@@ -38,21 +22,7 @@
 
     <product-gallery/>
 
-    <b-container>
-      <div class="d-flex justify-content-between align-items-center pt-3">
-        <a href="#">
-          <h4 class="text-right">
-          جدیدترین ها
-          </h4>   
-        </a>
-
-        <a href="#" class="text-left">
-          <span>
-            مشاهده همه />
-          </span>  
-        </a>
-      </div>
-    </b-container>
+    <mainTitles :title="titles.mainProducts"/>
 
     <b-container>
       <b-row class="carousel">
@@ -62,7 +32,7 @@
 
     <second-product-gallery/>
 
-    
+    <mainTitles :title="titles.redMeet"/>
 
     <b-container>
       <b-row class="carousel">

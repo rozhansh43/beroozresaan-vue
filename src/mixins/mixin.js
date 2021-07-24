@@ -250,7 +250,12 @@ export default {
           id: String(Math.floor(Math.random() * 999999999)),
           src: 'https://img.beroozresaan.com/unsafe/270x270/filters:format(webp)/files/widget/item/29d783e415f54c2cac123aed5828e57f.png'
         }
-      ]
+      ],
+      titles: {
+        latest: 'جدیدترین ها',
+        mainProducts: 'کالاهای اساسی',
+        redMeet: 'گوشت قرمز'
+      }
     }
   }
 }

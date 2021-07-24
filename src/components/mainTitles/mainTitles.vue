@@ -4,13 +4,15 @@
       <div class="d-flex justify-content-between align-items-center pt-3">
         <a href="#">
           <h4 class="text-right">
-            {{ titles }}
+            {{ title }}
           </h4>   
         </a>
 
         <a href="#" class="text-left">
           <span>
-            مشاهده همه />
+            مشاهده همه 
+            <i class="fas fa-chevron-left">
+            </i>
           </span>  
         </a>
       </div>
@@ -20,9 +22,9 @@
 
 <script>
 export default {
+  props: ['title'],
   data () {
     return {
-      titles: ['hh']
     }
   }
 }
