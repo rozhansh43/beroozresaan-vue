@@ -9,8 +9,7 @@
 
                     <div class="d-flex align-items-center mb-3 grey-text grey-border pt-3">
                         <span>
-                            <i class="fas fa-map-marker-alt bg-white rounded p-1 text-dark ml-2">
-                            </i>
+                            <i class="fas fa-map-marker-alt bg-white rounded p-1 text-dark ml-2"/>
                               آدرس : تهران، خیابان دماوند، خیابان اتحاد، نبش بزرگراه زین
                               الدین، پلاک ۶۱
                         </span>
@@ -18,16 +17,14 @@
 
                     <div class="d-flex align-items-center mb-3 grey-text">
                         <span>
-                        <i class="fas fa-phone bg-white rounded p-1 text-dark ml-2">
-                        </i>
+                        <i class="fas fa-phone bg-white rounded p-1 text-dark ml-2"/>
                         تلفن: ۹۶۶۴7-۰۲۱
                         </span>
                     </div>
 
                     <div class="d-flex align-items-center mb-3 grey-text">
                         <span>
-                            <i class="fas fa-envelope bg-white rounded p-1 text-dark ml-2">
-                            </i>
+                            <i class="fas fa-envelope bg-white rounded p-1 text-dark ml-2"/>
                         ایمیل: info@BeroozResaan.com
                         </span>
                     </div>
@@ -105,8 +102,7 @@
                     </h5>
 
                     <div class="text-center grey-border">
-                        <b-img rounded class="p-3" src="https://img.beroozresaan.com/unsafe/170x220/filters:format(webp)/files/widget/text/bee8f15eac7d4817a008eaffb1301553.png" alt="image">
-                        </b-img>
+                        <b-img rounded class="p-3" src="https://img.beroozresaan.com/unsafe/170x220/filters:format(webp)/files/widget/text/bee8f15eac7d4817a008eaffb1301553.png" alt="image"/>
                     </div>
                 </b-col>
             </b-row>
@@ -140,8 +136,7 @@
                         <b-row class="namad w-100 justify-content-center mx-0">
                             <b-col cols="auto" v-for="namad in namads" :key="namad.index" class="p-0 d-flex justify-content-center">
                                 <div class="bg-white rounded d-flex justify-content-center p-2 m-2">
-                                    <b-img rounded :src="namad" alt="image" >
-                                    </b-img>
+                                    <b-img rounded :src="namad" alt="image"/>
                                 </div>
                             </b-col>
                         </b-row>

@@ -7,8 +7,7 @@
             <b-navbar-nav>
               <b-nav-item href="#" >
                 <router-link to="/productCategory" class="border-animation">
-                <i class="fa fa-bars" aria-hidden="true">
-                </i>
+                <i class="fa fa-bars" aria-hidden="true"/>
                 دسته بندی کالاها
                 </router-link>              
               </b-nav-item>
@@ -56,8 +55,7 @@
         <b-row>
           <b-col class="d-flex justify-content-center align-items-center">
             <b-button v-b-toggle.sidebar-backdrop variant="white" class="d-flex">
-              <i class="fa fa-bars" aria-hidden="true">
-              </i>
+              <i class="fa fa-bars" aria-hidden="true"/>
             </b-button>
 
             <b-sidebar  id="sidebar-backdrop"
@@ -111,8 +109,7 @@
           </b-col>
 
           <b-col cols="9" class="d-flex justify-content-center align-items-center">
-            <b-form-input type="text" placeholder="جستجو">
-            </b-form-input>
+            <b-form-input type="text" placeholder="جستجو"/>
           </b-col>
         </b-row>
       </b-container>

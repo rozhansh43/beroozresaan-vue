@@ -38,7 +38,7 @@
 export default {
   name: 'carousel',
   props: {
-    item: { type: Object, default: () => {} }
+    item: { type: Object }
   }
 } 
 </script>

@@ -8,11 +8,11 @@
 
     <suggestioncarousel :items="suggestedProducts"/>
 
-    <category :categories="categories"/>
+    <category :items="categories"/>
 
     <metro-gallery/>
 
-    <mainTitles :title="titles.latest"/>
+    <main-titles :title="titles.latest"/>
 
     <b-container>
       <b-row class="carousel">
@@ -22,7 +22,7 @@
 
     <product-gallery :items="firstGallery"/>
 
-    <mainTitles :title="titles.mainProducts"/>
+    <main-titles :title="titles.mainProducts"/>
 
     <b-container>
       <b-row class="carousel">
@@ -32,7 +32,7 @@
 
     <product-gallery :items="secondGallery"/>
 
-    <mainTitles :title="titles.redMeet"/>
+    <main-titles :title="titles.redMeet"/>
 
     <b-container>
       <b-row class="carousel">
