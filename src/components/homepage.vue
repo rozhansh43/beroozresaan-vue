@@ -16,27 +16,27 @@
 
     <b-container>
       <b-row class="carousel">
-        <product-carousel :items="firstcarousel"/>
+        <product-carousel :items="latestCarousel"/>
       </b-row>
     </b-container>
 
-    <product-gallery :items="firstGallery"/>
+    <product-gallery :items="greenGallery"/>
 
     <main-titles :title="titles.mainProducts"/>
 
     <b-container>
       <b-row class="carousel">
-        <product-carousel :items="secondcarousel"/>
+        <product-carousel :items="mainProductCarousel"/>
       </b-row>
     </b-container>
 
-    <product-gallery :items="secondGallery"/>
+    <product-gallery :items="orangeGallery"/>
 
     <main-titles :title="titles.redMeet"/>
 
     <b-container>
       <b-row class="carousel">
-        <product-carousel :items="thirdcarousel"/>
+        <product-carousel :items="meetCarousel"/>
       </b-row>
     </b-container>
 
