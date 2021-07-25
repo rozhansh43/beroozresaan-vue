@@ -285,4 +285,8 @@ footer a:hover {
     .category img {
         margin-left: 0px
     }
+    .namads {
+        width: 65%;
+        margin: auto;
+    }
 }
