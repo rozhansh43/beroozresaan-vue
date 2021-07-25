@@ -23,16 +23,14 @@
             <b-img rounded
               src="https://img.beroozresaan.com/unsafe/fit-in/1000x1000/filters:format(webp):quality(100)/files/widget/item/3c90a706a4444ca2897501baca943495.gif" class="w-100"
               fluid
-            >
-            </b-img>
+            />
           </div>
 
           <div class="mt-2 m-md-0">
             <b-img rounded
               src="https://img.beroozresaan.com/unsafe/fit-in/1000x1000/filters:format(webp):quality(100)/files/widget/item/c1fab9ef3de942f0a1385ba2e18d560b.gif" 
               fluid class="mt-0 mt-md-3 w-100"
-            >
-            </b-img>
+            />
           </div>
         </b-col>
       </b-row>

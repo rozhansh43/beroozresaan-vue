@@ -37,10 +37,7 @@ import suggestionsproduct from '@/components/suggestions/suggestionsProduct.vue'
 export default {
   name: 'suggestionscarousel',
   props: {
-    items: {
-      type: Array,
-      default: () => []
-    }
+    items: { type: Array, default: () => [] }
   },
   components: {
     suggestionsproduct
