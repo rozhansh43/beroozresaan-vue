@@ -1,34 +1,48 @@
 <template>
-  <div class="add_domain">
+  <div class="domain_list">
     <div class="action">
-      <span @click="actionToggle();" id="demo" class="m-5 py-2 px-2">+ افزودن دامنه</span>
-      <carousel :perPageCustom="[[480, 2], [768, 6]]" class="domian_carousel">
-            <slide class="carousel_slide">
-                Slide 1 Content
-            </slide>
-            <slide class="carousel_slide">
-                Slide 2 Content
-            </slide>
-            <slide class="carousel_slide">
-                Slide 3 Content
-            </slide>
-            <slide class="carousel_slide">
-                Slide 4 Content
-            </slide>
-        </carousel>
+       <span @click="actionToggle();" id="demo" class="m-5 p-2">
+         < لیست دامنه ها 
+        </span>
+        
+        <div class="domian_carousel d-flex"> 
+            <carousel :perPageCustom="[[480, 2], [768, 6]]" class="w-100">
+                <slide class="carousel_slide">
+                    Slide 1 Content
+                </slide>
+                <slide class="carousel_slide">
+                    Slide 2 Content
+                </slide>
+                <slide class="carousel_slide">
+                    Slide 3 Content
+                </slide>
+                <slide class="carousel_slide">
+                    Slide 4 Content
+                </slide>
+            </carousel>
+            
+            <span class="add_domain">
+                افزودن دامنه +
+            </span>
+        </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            
+        }
+    },
     methods: {
         actionToggle() {
             const action = document.querySelector('.action');
             action.classList.toggle('active');
             var x = document.getElementById("demo");
             if (x.innerHTML === "X") {
-                x.innerHTML = "افزودن دامنه +";
+                x.innerHTML = "< لیست دامنه ها"
             } else {
                 x.innerHTML = "X";
             }
@@ -38,17 +52,18 @@ export default {
 </script>
 
 <style scoped>
-.add_domain {
+.domain_list {
     display: flex;
     justify-content: end;
 }
-.action span {
+.action #demo {
   width: fit-content;
   border-radius: 40px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0,0,0,0.1);
   display: flex;
-  background: #fff;
+  background: #6da9c4;
+  color: #fff;
   justify-content: center;
   align-items: center;
   transition: .3s ease-in-out;
@@ -64,11 +79,13 @@ export default {
   visibility: hidden;
   transition: .5s;
 }
+
 .action.active .domian_carousel {
   opacity: 1;
   visibility: visible;
   transition: .3s;
 }
+
 .action .domian_carousel .carousel_slide {
   list-style:none;
   text-decoration: none;
