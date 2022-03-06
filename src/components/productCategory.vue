@@ -6,26 +6,26 @@
         </span>
         
         <div class="domian_carousel d-flex"> 
-            <carousel :perPageCustom="[[480, 2], [768, 6]]" class="w-100">
-                <slide class="carousel_slide">
-                    Slide 1 Content
-                </slide>
-                <slide class="carousel_slide">
-                    Slide 2 Content
-                </slide>
-                <slide class="carousel_slide">
-                    Slide 3 Content
-                </slide>
-                <slide class="carousel_slide">
-                    Slide 4 Content
+            <carousel :perPageCustom="[[480, 2], [768, 4]]" class="w-100">
+                <slide 
+                    v-for="slide in slides"
+                    :key="slide.id"
+                    class="carousel_slide"
+                >
+                    <div 
+                     @click="getName(slide.name)"
+                    >
+                       {{ slide.name}}  
+                    </div>
                 </slide>
             </carousel>
             
             <span class="add_domain">
                 افزودن دامنه +
             </span>
+            
         </div>
-    </div>
+    </div>       
   </div>
 </template>
 
@@ -33,7 +33,24 @@
 export default {
     data() {
         return {
-            
+            slides: [
+                {
+                    id:1,
+                    name: "slide one"
+                },
+                {
+                    id:2,
+                    name: "slide two"
+                },
+                {
+                    id:3,
+                    name: "slide three"
+                },
+                {
+                    id:4,
+                    name: "slide four"
+                },
+            ]
         }
     },
     methods: {
@@ -43,15 +60,30 @@ export default {
             var x = document.getElementById("demo");
             if (x.innerHTML === "X") {
                 x.innerHTML = "< لیست دامنه ها"
-            } else {
-                x.innerHTML = "X";
             }
-        }
+            if (x.innerHTML = "< لیست دامنه ها)")
+            {
+                x.innerHTML = "X";
+            } else {
+                x.innerHTML = "< لیست دامنه ها"
+            }
+        },
+        getName(slide_name) {
+            var y = document.getElementById("demo");
+            console.log("ihnujhu");
+            y.innerHTML = slide_name + "<"
+        },
     }
 }
 </script>
 
 <style scoped>
+.add_domain {
+  background: #6da9c4;
+  color: #fff;
+  border-radius: 40px;
+}
+
 .domain_list {
     display: flex;
     justify-content: end;
