@@ -164,6 +164,7 @@ export default {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   background: #6da9c4;
   color: #fff;
+  z-index: 3;
   transition: 0.3s ease-in-out;
 }
 
@@ -175,10 +176,10 @@ export default {
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.5, 1);
+  transition: all 0.7s cubic-bezier(1, 0.5, 0.5, 1);
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
