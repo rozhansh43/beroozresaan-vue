@@ -1,42 +1,38 @@
 <template>
   <div class="container">
-      
-        My name is {{name}}
     <div class="domain_list row mt-5">
-      <div class="col-2">
-          
+      <div class="col-2 align-items-center d-flex justify-content-end">
+        <span @click="domainList" id="demo" class="p-2 action">
+          لیست دامنه ها >
+        </span>
       </div>
       <div class="col-8">
         <transition name="slide-fade">
-            <div v-if="show_domains" class="domian_carousel d-flex">
-            <span class="add_domain px-3 py-2 m-auto"> افزودن دامنه + </span>
-
+          <div v-if="show_domains" class="domian_carousel d-flex">
             <carousel
-                :perPageCustom="[
+              :paginationEnabled="false"
+              :perPageCustom="[
                 [480, 2],
                 [768, 4],
-                ]"
-                class="w-100  my-2"
+              ]"
+              class="w-100"
             >
-                <slide
+              <slide
                 v-for="slide in slides"
                 :key="slide.id"
-                class="carousel_slide mx-1 px-3 py-2"
-                >
+                class="carousel_slide px-3 py-2"
+              >
                 <div @click="getName(slide.name)">
-                    {{ slide.name }}
+                  {{ slide.name }}
                 </div>
-                </slide>
+              </slide>
             </carousel>
-            </div>
+            
+            <span class="add_domain px-3 py-2 mx-2"> افزودن دامنه + </span>
+          </div>
         </transition>
       </div>
-
-      <div class="col-2 align-items-center d-flex">
-        <span @click="domainList" id="demo" class="p-2 action">
-          < لیست دامنه ها
-        </span>
-      </div>
+      <div class="col-2"></div>
     </div>
   </div>
 </template>
@@ -62,12 +58,16 @@ export default {
           id: 4,
           name: "slide four",
         },
+        {
+          id: 5,
+          name: "slide five",
+        },
       ],
       show_domains: false,
-      name: ''
+      name: "",
     };
   },
-   mounted() {
+  mounted() {
     if (localStorage.slide_name) {
       this.name = localStorage.slide_name;
     }
@@ -89,9 +89,9 @@ export default {
     getName(slide_name) {
       var y = document.getElementById("demo");
       console.log("ihnujhu");
-      y.innerHTML = ">" + slide_name ;
-      localStorage.slide_name = slide_name 
-      this.show_domains = false
+      y.innerHTML =  slide_name + " > ";
+      localStorage.slide_name = slide_name;
+      this.show_domains = false;
     },
     domainList() {
       this.show_domains = !this.show_domains;
@@ -124,14 +124,14 @@ export default {
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.5, 1.0);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.5, 1);
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(-100px);
+  transform: translateX(100px);
   opacity: 0;
 }
 </style>
