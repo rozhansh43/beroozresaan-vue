@@ -10,7 +10,9 @@
         <template #button-content>
           <div class="bg-blue radius-40 py-1 px-3">
             <img src="@/assets/arrow-down.png" class="bg-lightgray radius-40 p-1 mx-1" width="15" alt="">
-            <span id="demo1" class="h6 text-light">لیست دامنه ها</span>
+            <span id="demo1" class="h6 text-light">
+              لیست دامنه ها
+            </span>
           </div>
         </template>
         <b-dropdown-item 
