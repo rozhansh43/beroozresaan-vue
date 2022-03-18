@@ -59,6 +59,7 @@ import mixin from '@/mixins/mixin'
 
 export default {
   mixins: [mixin],
+  
   name: "Homepage",
   components : {
     siteheader,
